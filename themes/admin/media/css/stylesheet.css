@@ -1,0 +1,71 @@
+html{height:100%;  min-height:100%;  font-size:100%; margin-bottom:1px}
+
+body{height:100%;  min-height:100%;  font-family:Tahoma,Verdana,Arial,Helvetica,sans-serif;  color:#363636;   font-size:13px}
+
+label.error{color:#F00; margin:0 0 0 5px; font-style:italic}
+
+a{color:#0080ff; text-decoration:none}
+a:hover{color:#0080ff; text-decoration:underline}
+a:active{color:#0080ff}
+a:focus{outline:1px}
+
+#login{width:360px; position:absolute; top:30%; left:50%; margin:0 0 0 -180px}
+#login h1{margin:0}
+#login .box{padding:10px; background:#fff; border:1px solid #CCC}
+#login table.form input[type=text], #login table.form input[type=password]{width:238px}
+#header{background:#333; padding:8px 0; color:#fff; border-bottom:solid 2px #7F7F7F; position:absolute; top:0; left:0; width:100%; z-index:1000}
+#header #site-info, #header #login-info{padding:2px 0}
+#header #site-info{float:left; padding-left:10px}
+#header #site-info a{font-weight:bold}
+#header #login-info{float:right; display:inline; padding-right:20px}
+#header:after{clear:both}
+
+#container{height:100%;  min-height:100%; width:100%}
+#container h1{padding:10px; background:#0080c0; color:#fff; font-size:16px}
+
+#menu{position:absolute; width:250px; top:0; left:0; background:#EEEEEC; height:100%}
+
+ul.menu{padding:45px 3px 0 3px; line-height:20px}
+ul.menu li{margin:0; background:#ddd; color:#555; background-color:#EEEEEC; border-bottom:1px solid #D3D7CF; border-top:1px solid #FFF}
+ul.menu li a:link, ul.menu li a:visited{padding:8px 10px; text-decoration:none; color:#555; display:block}
+ul.menu li:hover a{background:#ccc}
+ul.menu li.active, ul.menu li.active a{background:#ccc}
+
+#content{margin:0 0 0 250px; padding:45px 10px 20px 10px}
+#content h1{margin:0 0 15px; padding:10px; background:#0080c0; color:#fff; font-size:16px}
+#content h1 a{color:#FFF}
+
+.search{padding:5px; background:#eee; margin:-15px 0 15px 0}
+
+.lang a.active{text-decoration:underline}
+
+.flag{display:block; float:left; width:24px; height:24px; overflow:hidden; text-indent:1000%; padding:0 3px; margin:0 0 0 5px}
+.flag.th{background:url(../images/th.png) center center no-repeat}
+.flag.en{background:url(../images/en.png) center center no-repeat}
+.flag.active{background-color:#0080C0}
+.trlang{border-bottom:solid 3px #0080C0}
+table.form .trlang td, .form .trlang th{padding:0}
+
+.e-blue, .e-blue a{border-style:solid; border-color:#36c; background-color:#36c; color:#fff}
+
+.e-blue a:hover{background:#0080ff}
+
+.e-red, .e-red a{border-style:solid; border-color:#b42d05; background-color:#b42d05; color:#fff}
+
+.e-red a:hover{background:#db3606}
+
+.e-green, .e-green a{border-style:solid; border-color:#008000; background-color:#008000; color:#fff}
+
+.e-green a:hover{background:#009f00}
+
+.e-violet, .e-violet a{border-style:solid; border-color:#66f; background-color:#66f; color:#fff}
+
+.e-violet a:hover{background:#8080ff}
+
+table.form2{width:100%}
+table.form2 td{ border:1px solid #CCC;  color:#595959;  height:35px;  padding:5px;  width:70%;  vertical-align:middle; line-height:20px}
+table.form2 th{ border-color:#CCC #CCC #CCC #6ba7d3;  border-style:solid;  border-width:1px 0 1px 2px;  color:#333;  font-size:14px;  font-weight:700;  padding:10px 5px;  width:30%; text-align:left}
+
+.clCategory, .clDrop, .clIncrease, .clDownload, .clNew, .clUpdate, .clInstalled{white-space:nowrap; background-color:#555; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; padding:1px 5px 1px 4px; color:white; font-size:8pt; font-weight:bold; display:inline; text-transform:uppercase; margin:0 5px 0 0}
+.clDownload{background:#0070A3 !important}
+.clDownload a{color:#fff}
