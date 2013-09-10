@@ -43,9 +43,9 @@ $active_record = TRUE;
 
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'kpoplove_se';
-$db['default']['password'] = 'TG4Bf4CZ';
-$db['default']['database'] = 'kpoplove_se';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '1234';
+$db['default']['database'] = 'treba';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

@@ -1,11 +1,15 @@
 <ul class="menu">
-    <li <?php echo menu_active('users','administrators')?>><a href="users/admin/administrators">Administrator</a></li>
+    <li <?php echo menu_active('users','administrators')?>><a href="users/admin/administrators">แอดมิน</a></li>
+    <li <?php echo menu_active('dashboards','dashboards')?>><a href="dashboards/admin/dashboards">สถิติเว็บไซต์</a></li>
+    <li <?php echo menu_active('abouts','abouts')?>><a href="abouts/admin/abouts">เกี่ยวกับสมาคม</a></li>
+    <li <?php echo menu_active('members','members')?>><a href="members/admin/members">เกี่ยวกับสมาชิก</a></li>
+    <!-- <li <?php echo menu_active('users','administrators')?>><a href="users/admin/administrators">Administrator</a></li>
 	<li <?php echo menu_active('dashboards','dashboards')?>><a href="dashboards/admin/dashboards">Statistics</a></li>
 	<li <?php echo menu_active('users','users')?>><a href="users/admin/users">Member</a></li>
 	<li <?php echo menu_active('banners','banners')?>><a href="banners/admin/banners">Banners</a></li>
 	<li <?php echo menu_active('tickers','tickers')?>><a href="tickers/admin/tickers">Ticker</a></li>
-	<!-- <li <?php echo menu_active('coverpages','coverpages')?> ><a href="coverpages/admin/coverpages">หน้าแรก</a></li>
-    <li <?php echo menu_active('hilights','hilights')?>><a href="hilights/admin/hilights">ไฮไลท์</a> -->
+	<li <?php echo menu_active('coverpages','coverpages')?> ><a href="coverpages/admin/coverpages">หน้าแรก</a></li>
+    <li <?php echo menu_active('hilights','hilights')?>><a href="hilights/admin/hilights">ไฮไลท์</a>
     <li <?php echo menu_active('kpop_news','kpop_news')?>><a href="kpop_news/admin/kpop_news">News</a></li>
     <li <?php echo menu_active('music_videos','music_videos')?>><a href="music_videos/admin/music_videos">Music Video</a></li>
 	<li <?php echo menu_active('vdos','categories')?>><a href="vdos/admin/categories">Series</a></li>
@@ -20,5 +24,5 @@
 	<li <?php echo menu_active('vdos','dead_link')?>><a href="vdos/admin/vdos/dead_link">Dead links</a></li>
 	<li <?php echo menu_active('contacts','contacts')?>><a href="contacts/admin/contacts">Contacts</a></li>
 	<li <?php echo menu_active('cronjobs','cronjobs')?>><a href="cronjobs/admin/cronjobs">Scripts</a></li>
-	<li <?php echo menu_active('lines','lines')?>><a href="lines/admin/lines">LINE Sticker Shop</a></li>
+	<li <?php echo menu_active('lines','lines')?>><a href="lines/admin/lines">LINE Sticker Shop</a></li> -->
 </ul>

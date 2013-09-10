@@ -5,22 +5,41 @@ Class Abouts extends Admin_Controller{
 		parent::__construct();	
 	}
 	
-	function form($id=FALSE){
-		$data['about'] = new About($id);
-		$this->template->build('admin/about_form',$data);
-	}
-	
-	function save($id=FALSE)
-	{
-		if($_POST){
-			$about = new About($id);
-			$_POST['user_id'] = $this->session->userdata('id');
-			$about->from_array($_POST);
-			$about->save();
-			set_notify('success', lang('save_data_complete'));
-		}
-		redirect('abouts/admin/abouts/form/'.$_POST['id']);
-	}
+    function index()
+    {
+        $data['abouts'] = new About();
+        $data['abouts']->order_by('id','desc')->get_page();
+        $this->template->append_metadata(js_checkbox('approve'));
+        $this->template->build('admin/index',$data);
+    }
+    
+    function form($id=false){
+        $data['about'] = new About($id);
+        $this->template->build('admin/form',$data);
+    }
+    
+    function save($id=false){
+        if($_POST){
+            $about = new About($id);
+            $_POST['slug'] = clean_url($_POST['title']);
+            if(!$id)$_POST['user_id'] = $this->session->userdata('id');
+            $about->from_array($_POST);
+            $about->save();
+            set_notify('success', lang('save_data_complete'));
+        }
+        redirect($_POST['referer']);
+    }
+    
+    function delete($id=FALSE)
+    {
+        if($id)
+        {
+            $new = new About($id);
+            $new->delete();
+            set_notify('success', lang('delete_data_complete'));
+        }
+        redirect($_SERVER['HTTP_REFERER']);
+    }
 	
 }
 ?>
