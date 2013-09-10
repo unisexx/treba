@@ -1,0 +1,14 @@
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+.eee {
+  .rounded-corners;
+  border:1px solid red;
+}
+.fff {
+  .rounded-corners(10px);
+  border:1px solid #000;
+}

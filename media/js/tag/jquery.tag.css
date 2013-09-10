@@ -1,0 +1,26 @@
+.tagEditor{
+	margin: 12px 0;
+	padding: 0;
+}
+
+.tagEditor li
+{
+	display: inline;
+	background-image: url(minus_small.png);
+	background-color: #EEF8FB;
+	background-position: 95% 50%;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	padding: 5px 20px 5px 6px;
+	margin: 0 4px;	
+	cursor: pointer;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #B3CFEA;
+}
+
+.tagEditor li:hover
+{
+	background-color: #F5B5A9;
+	border: 1px solid #EB5339;
+}

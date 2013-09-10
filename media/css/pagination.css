@@ -1,0 +1,43 @@
+body .pagination span,.pagination a{padding:5px;}
+
+body div.pagination{
+    text-align:center !important;
+    margin: 10px 0 0 0;
+}
+
+body div.pagination a,div.pagination span{
+    margin:0 5px;
+    padding:3px 12px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    color:#444444 !important;
+    font-weight:bold;
+    text-decoration:none;
+    cursor:pointer;
+    line-height:20px;
+    display:inline-block;
+    background:url(images/white_button.png) repeat-x bottom left;
+    border:1px solid #CCCCCC;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+}
+
+
+body div.pagination span.current,div.pagination a:hover{
+    color:#FFFFFF !important;
+    background-color:#5D9ADF;
+    background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.2, rgb(80,146,220)),
+    color-stop(0.8, rgb(107,163,226))
+    );
+    background: -moz-linear-gradient(
+    center bottom,
+    rgb(80,146,220) 20%,
+    rgb(107,163,226) 80%
+    );
+    border:1px solid #266DBB;
+    text-shadow:-1px -1px 1px #266DBB;
+}

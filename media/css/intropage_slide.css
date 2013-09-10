@@ -1,0 +1,47 @@
+.Invisible {
+	DISPLAY: none
+}
+#Main {
+	OVERFLOW: hidden; WIDTH: 584px
+}
+
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL LI {
+	LIST-STYLE-TYPE: none
+}
+#Shotcuts {
+	BORDER-TOP: #ddd 1px solid; MARGIN: 70px 0px 30px; PADDING-TOP: 10px; BORDER-BOTTOM: #ddd 1px solid; BACKGROUND-COLOR: #f6f6f6; TEXT-ALIGN: center
+}
+#Shotcuts UL {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; WIDTH: 584px; LINE-HEIGHT: 22px; PADDING-TOP: 0px; HEIGHT: 22px
+}
+#Shotcuts LI {
+	FLOAT: left; COLOR: #333; MARGIN-RIGHT: 7px; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+#MainPromotionBanner .Slides {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; 
+	LIST-STYLE-TYPE: none; HEIGHT: 397px
+}
+#MainPromotionBanner .Slides LI {
+	FLOAT: left; WIDTH: 584px; HEIGHT: 397px
+}
+#MainPromotionBanner .SlideTriggers LI {
+	DISPLAY: inline; FONT-SIZE: 10px; background:#000; FLOAT: left; 
+	MARGIN: 3px; OVERFLOW: hidden; WIDTH: 16px; CURSOR: pointer; COLOR:#fff; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana; font-weight:bold;
+	HEIGHT: 16px; TEXT-ALIGN: center
+}
+#MainPromotionBanner .SlideTriggers LI.Current {
+	DISPLAY: inline; FONT-SIZE: 10px; BACKGROUND:#f00; FLOAT: left; 
+	MARGIN: 3px; OVERFLOW: hidden; WIDTH: 16px; CURSOR: pointer; COLOR: #fff; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana; font-weight:bold;
+	HEIGHT: 16px; TEXT-ALIGN: center
+}
+#MainPromotionBanner .SlideTriggers {
+	 POSITION: absolute; TOP: auto; HEIGHT: 10px
+}
+#MainPromotionBanner .SlideTriggers {
+	 PADDING-BOTTOM: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; TOP: 371px; HEIGHT: 25px;LEFT: 4px
+	 /*top 103 คือการขยับกรอบให้มีความพอดีกับรูป*/
+}
+
