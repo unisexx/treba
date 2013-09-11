@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>สมาคมนายหน้าอสังหาริมทรัพย์ไทย</title>
+<link rel="stylesheet" href="themes/treba/css/style.css" type="text/css" />
+</head>
+
+<body>
+
+<div id="wrap">
+    <div class="main">
+  <div id="col1">
+        <?php include_once('_header.php');?>
+        <div class="title_sponsor"></div>
+        <div id="sponsor">
+            <ul>
+                <li style="position:absolute; top:33px;"><a href="#"><img src="themes/treba/images/arrow_supportLeft.png" width="18" height="29" border="0"></a></li>
+                <li style="margin-left:43px;"><a href="#"><img src="themes/treba/images/support1.gif" width="120" height="60" border="0"></a></li>
+                <li><a href="#"><img src="themes/treba/images/support2.gif" width="120" height="60" border="0"></a></li>
+                <li><a href="#"><img src="themes/treba/images/support3.gif" width="120" height="60" border="0"></a></li>
+                <li><a href="#"><img src="themes/treba/images/support4.gif" width="120" height="60" border="0"></a></li>
+                <li><a href="#"><img src="themes/treba/images/support5.gif" width="120" height="60" border="0"></a></li>
+                <li><a href="#"><img src="themes/treba/images/support6.gif" width="120" height="60" border="0"></a></li>
+                <li style="position:absolute; top:33px;"><a href="#"><img src="themes/treba/images/arrow_supportRight.png" width="18" height="29" border="0"></a></li>
+            </ul>
+        </div>
+        <div class="clr"></div>
+        
+        <div id="col_1a">
+        
+      <div id="menuabout">
+        <div class="menuabout1"><img src="themes/treba/images/title_aboutus.png" width="174" height="26">
+            <ul>
+                <li><a href="#">ประวัติสมาคม</a></li>
+                <li><a href="#">คณะกรรมการสมาคม</a></li>
+                <li><a href="#">คณะกรรมการจรรยาบรรณ</a></li>
+                <li><a href="#">คณะทำงานยกร่างพรบ.</a></li>
+                <li><a href="#">จรรยาบรรณนายหน้า</a></li>
+                <li><a href="#">ข้อบังคับสมาคม</a></li>
+                <li><a href="#">ขั้นตอนการพิจารณาและ
+                อนุมัติการสมัครสมาชิกสมาคม</a></li>
+                <li><a href="#">สถาบันที่สมาคมรับรอง</a></li>
+                <li><a href="#">ตัวอย่างการจดวัตถุประสงค์
+                หลักการเป็นนายหน้า</a></li>
+            </ul>
+         </div>
+      <div class="line1"></div>
+          <div class="menuabout1"><img src="themes/treba/images/title_aboutMember.png" width="170" height="24" />
+            <ul>
+                <li><a href="#">สมาชิกวุฒิ</a></li>
+                <li><a href="#">สมาชิกสามัญ</a></li>
+                <li><a href="#">สมาชิกวิสามัญ</a></li>
+                <li><a href="#">สมาชิกสมทบ</a></li>
+                <li><a href="#">ใบสมัครสมาชิก</a></li>
+            </ul>
+        </div>
+      </div>
+       <div id="FB"><img src="themes/treba/images/fb2.jpg" width="187" height="242" /></div>
+       </div>
+    
+       
+       <div id="col_2a">
+            <div id="newsevent"><img src="themes/treba/images/title_newsevent.jpg" width="151" height="20" /><div class="btn_readAll"></div><div class="line2"></div>
+            
+            <div id="contentNewsEvent" style="padding-top:6px;">
+                  <ul>
+                    <li><a href="#"><img src="themes/treba/images/pic_news1.jpg" width="122" height="95" border="0"></a>
+                        <span class="text_topic"><a href="#">สรุปแนวตัดถนนใหม่ข้ามมอเตอร์เวย์<br>เวนคืนบ้านเรือนประชาชนแค่ 9 หลัง</a></span><br>
+                        <span class="textNews">เมื่อเวลา 13.30 น. วันที่ 3 ก.ค. 56 ที่โรงแรมเดอะ แกรนด์โฟว์วิงส์ คอนเวนชัน สำนักการโยธา (สนย.)สัมมนารับฟังความคิดเห็นครั้งที่ 3</span>
+                        <br>
+                    <span class="dataNew">( 04 กรกฎาคม 2556 )</span></li>
+                   
+              
+                    <li><a href="#"><img src="themes/treba/images/pic_news2.jpg" width="121" height="95" border="0"></a>
+                                            <span class="text_topic"><a href="#">ซีคอนฯดันบ้านพรีแฟบสู้วิกฤต </a></span><br>
+                        <span class="textNews">ซีคอนฯ รับมือต้นทุนวัสดุ -ค่าก่อสร้างพุ่งดึงระบบพรีแฟบใช้ชิ้นส่วนสำเร็จรูปสร้างบ้านเต็มรูปแบบ รับความต้องการของกลุ่มลูกค้ากลุ่มใหญ่ในตลาดกลาง-ล่าง แจงขึ้นราคาบ้าน 5%</span><br>
+                    <span class="dataNew"> ( 04 กรกฎาคม 2556 )</span></li>
+                    
+                    
+                    <li><a href="#"><img src="themes/treba/images/pic_news3.jpg" width="122" height="95" border="0"></a>
+                        <span class="text_topic"><a href="#">เปิดรับสมัครสอบบุคคลเพื่อรับบัตรฯ</a></span><br>
+                        <span class="textNews">สมาคมนายหน้าอสังหาริมทรัพย์ไทย เปิดรับสมัครสอบบุคคลเพื่อรับบัตรประจำตัว "นายหน้าอสังหาริมทรัพย์ไทย" ครั้งที่ 3/2556 รุ่นที่ 51 กำหนดการจัดสอบ วันเสาร์ที่ 6</span><br>
+                        <span class="dataNew"> ( 04 กรกฎาคม 2556 )</span></li>
+                   
+                    
+                    <li><a href="#"><img src="themes/treba/images/pic_news4.jpg" width="122" height="95" border="0"></a>
+                        <span class="text_topic"><a href="#">บางพลัดค้านเวนคืนรถไฟสีน้ำเงินแนะกทม<br>เจาะอุโมงค์ใต้ดินแทน</a></span><br>
+                        <span class="textNews">ประชาชนชาวบางพลัดยื่นหนังสือรองผู้ว่าฯ กทม. ขอความชัดเจนเรื่องเวนคืนที่ดินสร้างรถไฟฟ้าสายสีน้ำเงิน ชี้ประชาชนเดือดร้อนหนัก</span><br>
+                        <span class="dataNew"> ( 04 กรกฎาคม 2556 )</span></li>
+                        
+                    <li><a href="#"><img src="themes/treba/images/pic_news5.jpg" width="122" height="95" border="0"></a>
+                        <span class="text_topic"><a href="#">บ้าน-คอนโดฯแห่ผุด รังสิต หมื่นยูนิต <br>ตอบโจทย์แรงงาน-นักศึกษา</a></span><br>
+                        <span class="textNews">บ้าน-คอนโดฯในพื้นที่รังสิตกลายเป็นทำเลทองที่กลุ่มผู้ประกอบการอสังหาริมทรัพย์ให้ความสนใจหลังเหตุการณ์น้ำท่วมรุนแรงในช่วงปลา</span><br>
+                        <span class="dataNew"> ( 04 กรกฎาคม 2556 )</span></li>
+                        
+                    <li><a href="#"><img src="themes/treba/images/pic_news6.jpg" width="122" height="95" border="0"></a>
+                        <span class="text_topic"><a href="#">เปิดอบรมผู้สนใจเป็นตัวแทนขายฯ</a></span><br>
+                        <span class="textNews">เปิดอบรมผู้สนใจเป็นตัวแทนขายธุรกิจนายหน้าอสังหาริมทรัพย์ รุ่นที่ 3/2556 ในวันที่ 21-22-23 มิถุนายน 2556 ตั้งแต่บัดนี้เป็นต้นไป</span><br>
+                        <span class="dataNew"> ( 04 กรกฎาคม 2556 )</span></li>
+                    
+                 </ul>
+                  
+                  <div class="btn_more1"><a href="#">&nbsp;</a></div>
+              <div class="line1"></div>
+                  
+                  <div class="bannerPR">
+                  <div style="float:left; width:354px;">
+                  <a href="#"><img src="themes/treba/images/banner1.jpg" width="354" height="125" border="0"></a>
+                  <a href="#"><img src="themes/treba/images/banner2.jpg" width="354" height="103" border="0" style="margin-top:8px;"></a></div>
+                  <div style="float:right; margin-left:15px;"><a href="#"><img src="themes/treba/images/banner3.jpg" width="355" height="236" border="0"></a></div>
+                  </div>
+                  
+                  
+              </div>
+         </div>
+       </div>
+        <div class="clr"></div>
+      <div class="title_weblink"></div>
+        <div class="titlewelink1"></div>
+        <div id="weblink">
+        <div class="btn_readAll" style="margin-top:25px; margin-right:10px;"></div>
+            <ul>
+                <li style="position:absolute; top:60px;"><a href="#"><img src="themes/treba/images/arrow_grayLeft.png" width="10" height="23" border="0"></a></li>
+                <li style="margin-left:40px;"><a href="#"><img src="themes/treba/images/link_forMember/link1.png" width="89" height="52" border="0"></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forMember/link2.png" width="89" height="52" border="0"></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forMember/link3.png" width="89" height="52" border="0" /></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forMember/link4.png" width="89" height="52" border="0" /></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forMember/link5.png" width="89" height="52" border="0" /></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forMember/link6.png" width="89" height="52" border="0" /></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forMember/link7.png" width="89" height="52" border="0" /></a></li>
+                <li style="position:absolute; top:60px;"><a href="#"><img src="themes/treba/images/arrow_grayRight.png" width="10" height="23" border="0"></a></li>
+            </ul>
+          <div class="line4"></div>
+          <div class="titlewelink2"></div>
+          <div class="btn_readAll" style="margin-top:20px; margin-right:10px;"></div>
+            <ul style="margin-top:40px;">
+                <li style="position:absolute; top:170px;"><a href="#"><img src="themes/treba/images/arrow_grayLeft.png" width="10" height="23" border="0"></a></li>
+                <li style="margin-left:40px;"><a href="#"><img src="themes/treba/images/link_forGeneral/link_a.png" width="89" height="52" border="0"/></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forGeneral/link_b.png" width="89" height="52" border="0"/></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forGeneral/link_c.png" width="89" height="52" border="0"/></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forGeneral/link_d.png" width="89" height="52" border="0"/></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forGeneral/link_f.png" width="89" height="52" border="0"/></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forGeneral/link_g.png" width="89" height="52" border="0"/></a></li>
+                <li><a href="#"><img src="themes/treba/images/link_forGeneral/link_h.png" width="89" height="52" border="0"/></a></li>
+                <li style="position:absolute; top:170px;"><a href="#"><img src="themes/treba/images/arrow_grayRight.png" width="10" height="23" border="0"></a></li>
+            </ul>
+           
+        </div>
+       
+  </div>
+   <div class="clr"></div>
+        <div id="footer"><b>สมาคมนายหน้าอสังหาริมทรัพย์ไทย - Thai Real Estate Broker Association ( TREBA )</b><br>
+เลขที่ 387 ซ.ประสาทคอร์ต(สวนพลู 8) ถ.สาทรใต้ แขวงทุ่งมหาเมฆ เขตสาทร กรุงเทพ ฯ 10120 <br>
+โทรศัพท์.02-679-3255 , 02-2874568-70 คุณกานติญา นัยนิตย์ หรือ คุณสุภาพร ศรีสวัสดิ์ | มือถือ 081-484-3393 โทรสาร.286-3457 ,e-mail : <a href="mailto:treba@treba.or.th">treba@treba.or.th</a><br>
+<span class="copyright">Copyright @ 2013 www.treba.or.th  All Rights Reserved.</span></div>
+</div>
+
+</body>
+</html>
