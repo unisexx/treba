@@ -1,5 +1,5 @@
 <?php
-class weblinks extends Admin_Controller
+class Links extends Admin_Controller
 {
 	
 	function __construct()
@@ -9,8 +9,11 @@ class weblinks extends Admin_Controller
 	
 	function index()
 	{
-		$data['weblinks'] = new weblink();
-		$data['weblinks']->order_by('id','desc')->get_page();
+		$data['links'] = new Link();
+		// if(@$_GET['search'])$data['links']->where("title like '%".$_GET['search']."%'");
+		// if(@$_GET['status'])$data['links']->where('status',$_GET['status']);
+		// if(@$_GET['category_id'])$data['links']->where("category_id = ".$_GET['category_id']);
+		$data['links']->order_by('id','desc')->get_page();
 		$this->template->append_metadata(js_lightbox());
 		$this->template->append_metadata(js_checkbox('approve'));
 		$this->template->build('admin/index',$data);
@@ -18,7 +21,7 @@ class weblinks extends Admin_Controller
 	
 	function form($id=FALSE)
 	{
-		$data['weblink'] = new weblink($id);
+		$data['link'] = new Link($id);
 		$this->template->append_metadata(js_datepicker());
 		$this->template->build('admin/form',$data);
 	}
@@ -27,16 +30,11 @@ class weblinks extends Admin_Controller
 	{
 		if($_POST)
 		{
-			$weblink = new weblink($id);
-            // $_POST['slug'] = clean_url($_POST['title']);
+			$link = new Link($id);
+            $_POST['slug'] = clean_url($_POST['title']);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
-			if($_FILES['image']['name'])
-			{
-				if($id)$weblink->delete_file($weblink->id,'uploads/weblink/thumbnail','image');
-				$weblink->image = $weblink->upload($_FILES['image'],'uploads/weblink/');
-			}
-			$weblink->from_array($_POST);
-			$weblink->save();
+			$link->from_array($_POST);
+			$link->save();
 			set_notify('success', lang('save_data_complete'));
 		}
 		redirect($_POST['referer']);
@@ -46,12 +44,12 @@ class weblinks extends Admin_Controller
 	{
 		if($_POST)
 		{
-			$weblink = new weblink($id);
+			$link = new Link($id);
 			$_POST['approve_id'] = $this->session->userdata('id');
-			$weblink->approve_date = date("Y-m-d H:i:s");
-			$weblink->from_array($_POST);
-			$weblink->save();
-			echo approve_comment($weblink);
+			$link->approve_date = date("Y-m-d H:i:s");
+			$link->from_array($_POST);
+			$link->save();
+			echo approve_comment($link);
 		}
 
 	}
@@ -60,8 +58,8 @@ class weblinks extends Admin_Controller
 	{
 		if($id)
 		{
-			$weblink = new weblink($id);
-			$weblink->delete();
+			$link = new link($id);
+			$link->delete();
 			set_notify('success', lang('delete_data_complete'));
 		}
 		redirect($_SERVER['HTTP_REFERER']);

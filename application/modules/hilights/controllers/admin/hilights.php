@@ -14,14 +14,14 @@ class Hilights extends Admin_Controller
 		$data['hilights']->order_by('id','desc')->get_page();
 		$this->template->append_metadata(js_lightbox());
 		$this->template->append_metadata(js_checkbox('approve'));
-		$this->template->build('admin/hilight_index',$data);
+		$this->template->build('admin/index',$data);
 	}
 	
 	function form($id=FALSE)
 	{
 		$data['hilight'] = new Hilight($id);
 		$this->template->append_metadata(js_datepicker());
-		$this->template->build('admin/hilight_form',$data);
+		$this->template->build('admin/form',$data);
 	}
 	
 	function save($id=FALSE)
@@ -35,13 +35,13 @@ class Hilights extends Admin_Controller
 				if($hilight->id){
 					$hilight->delete_file($hilight->id,'uploads/hilight','image');
 				}
-				$_POST['image'] = $hilight->upload($_FILES['image'],'uploads/hilight/',713,219);
+				$_POST['image'] = $hilight->upload($_FILES['image'],'uploads/hilight/');
 			}
 			$hilight->from_array($_POST);
 			$hilight->save();
 			set_notify('success', lang('save_data_complete'));
 		}
-		redirect('hilights/admin/hilights');
+		redirect($_POST['referer']);
 	}
 	
 	function delete($id=FALSE)
@@ -52,7 +52,7 @@ class Hilights extends Admin_Controller
 			$hilight->delete();
 			set_notify('success', lang('delete_data_complete'));
 		}
-		redirect('hilights/admin/hilights');
+		redirect($_SERVER['HTTP_REFERER']);
 	}
 
 	function approve($id)

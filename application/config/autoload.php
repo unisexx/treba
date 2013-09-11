@@ -50,7 +50,7 @@ $autoload['libraries'] = array('database','datamapper','template','parser','sess
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url','html','form','language','media','auth','url','date','text');
+$autoload['helper'] = array('url','html','form','language','media','auth','url','date','text','download');
 
 
 /*

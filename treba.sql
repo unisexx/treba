@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50045
 File Encoding         : 65001
 
-Date: 2013-09-11 02:59:20
+Date: 2013-09-12 00:52:30
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -99,6 +99,27 @@ INSERT INTO `banners` VALUES ('55', 'http://www.hellomygirls.com/', 'uploads/ima
 INSERT INTO `banners` VALUES ('56', 'http://www.chicchickorea.com/', 'uploads/image/banner/chicchickorea2.gif', '', 'http://www.chicchickorea.com/', 'sidebar', '220', '2013-09-09 15:31:13', '2013-08-23', '2013-11-23', 'approve', '119', '100', '2013-08-23 15:55:03', null);
 INSERT INTO `banners` VALUES ('57', 'https://www.facebook.com/beautyskinhealth', 'uploads/image/banner/beautyskinhealth.gif', '', 'https://www.facebook.com/beautyskinhealth', 'sidebar', '220', '2013-08-24 13:00:29', '2013-08-24', '2013-11-24', 'approve', '120', '100', '2013-08-24 13:00:19', null);
 INSERT INTO `banners` VALUES ('58', 'http://lemonpigshop.lnwshop.com/', 'uploads/image/banner/lemonpigshop', '', 'http://lemonpigshop.lnwshop.com/', 'sidebar', '220', '2013-08-27 16:41:59', '2013-08-27', '2013-11-27', 'approve', '121', '100', '2013-08-27 16:41:52', null);
+
+-- ----------------------------
+-- Table structure for `bnews`
+-- ----------------------------
+DROP TABLE IF EXISTS `bnews`;
+CREATE TABLE `bnews` (
+  `id` int(11) NOT NULL auto_increment,
+  `slug` varchar(255) default NULL,
+  `title` varchar(255) default NULL,
+  `detail` text,
+  `image` varchar(255) default NULL,
+  `user_id` int(11) default NULL,
+  `created` datetime default NULL,
+  `updated` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of bnews
+-- ----------------------------
+INSERT INTO `bnews` VALUES ('4', 'ข่าวสารและกิจกรรม', 'ข่าวสารและกิจกรรม', '<p>ข่าวสารและกิจกรรม</p>', '52308814c1d03.png', '49', '2013-09-11 22:11:16', '2013-09-11 22:11:37');
 
 -- ----------------------------
 -- Table structure for `calendars`
@@ -241,7 +262,7 @@ CREATE TABLE `categories` (
   `created` datetime default NULL,
   `updated` datetime default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=451 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=455 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of categories
@@ -251,6 +272,10 @@ INSERT INTO `categories` VALUES ('447', null, 'members', 'สมาชิกว�
 INSERT INTO `categories` VALUES ('448', null, 'members', 'สมาชิกสามัญ', '1', null, null, null, '0', null, null, null, null, '0', null, '2013-09-11 02:22:34', '2013-09-11 02:22:34');
 INSERT INTO `categories` VALUES ('449', null, 'members', 'สมาชิกวิสามัญ', '1', null, null, null, '0', null, null, null, null, '0', null, '2013-09-11 02:23:03', '2013-09-11 02:23:03');
 INSERT INTO `categories` VALUES ('450', null, 'members', 'สมาชิกสมทบ', '1', null, null, null, '0', null, null, null, null, '0', null, '2013-09-11 02:23:16', '2013-09-11 02:23:16');
+INSERT INTO `categories` VALUES ('451', 'ลิ้งค์รูปภาพ', 'weblinks', 'ลิ้งค์รูปภาพ', '0', null, null, null, '0', null, null, null, null, '0', null, null, null);
+INSERT INTO `categories` VALUES ('452', null, 'weblinks', 'สำหรับอาชีพนายหน้า', '451', null, null, null, '0', null, null, null, null, '0', null, '2013-09-12 00:20:18', '2013-09-12 00:20:18');
+INSERT INTO `categories` VALUES ('453', null, 'weblinks', 'สำหรับผู้บริโภคทั่วไป', '451', null, null, null, '0', null, null, null, null, '0', null, '2013-09-12 00:20:39', '2013-09-12 00:20:39');
+INSERT INTO `categories` VALUES ('454', null, 'weblinks', 'ผู้สนับสนุน', '451', null, null, null, '0', null, null, null, null, '0', null, '2013-09-12 00:36:58', '2013-09-12 00:36:58');
 
 -- ----------------------------
 -- Table structure for `contacts`
@@ -298,6 +323,27 @@ CREATE TABLE `coverpages` (
 -- ----------------------------
 INSERT INTO `coverpages` VALUES ('1', 'เทศการงานกินขนม นมเนย', 'เทศการงานกินขนม<br />เทศการงานกินขนม<br />เทศการงานกินขนม', 'uploads/coverpage/popup_download.jpg', '2012-06-27', '0000-00-00', 'draft', '49', '2012-06-27 11:20:18', '2012-07-18 11:37:22', '1', '#247d84');
 INSERT INTO `coverpages` VALUES ('2', 'อร่อยจังเลย', 'อร่อยจังเลย<br />อร่อยจังเลย', 'uploads/coverpage/firin%2Bher%2Blazer.gif', '2012-06-27', '0000-00-00', 'draft', '49', '2012-06-27 11:42:37', '2012-07-18 11:37:22', '0', '#d1d0b7');
+
+-- ----------------------------
+-- Table structure for `downloads`
+-- ----------------------------
+DROP TABLE IF EXISTS `downloads`;
+CREATE TABLE `downloads` (
+  `id` int(11) NOT NULL auto_increment,
+  `slug` varchar(255) default NULL,
+  `title` varchar(255) default NULL,
+  `file` varchar(255) default NULL,
+  `user_id` int(11) default NULL,
+  `created` datetime default NULL,
+  `updated` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of downloads
+-- ----------------------------
+INSERT INTO `downloads` VALUES ('1', 'เอกสารที่-1', 'เอกสารที่ 1', '5230994eab905.png', '49', '2013-09-11 23:24:46', '2013-09-11 23:38:35');
+INSERT INTO `downloads` VALUES ('2', 'เอกสารที่-2', 'เอกสารที่ 2', '52309984ef6c1.txt', '49', '2013-09-11 23:25:41', '2013-09-11 23:25:41');
 
 -- ----------------------------
 -- Table structure for `galleries`
@@ -424,20 +470,12 @@ CREATE TABLE `hilights` (
   `approve_id` int(11) default NULL,
   `url` text collate utf8_unicode_ci,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of hilights
 -- ----------------------------
-INSERT INTO `hilights` VALUES ('44', null, 'วิจัยฯ ผู้สูงอายุ อ.บางบาล จ.พระนครศรีอยุธยา', null, null, '4fd5b3e4f34fd.jpg', '0', '2012-06-11 16:01:26', '2012-06-21 10:37:07', '49', '1', '2012-06-21', '0000-00-00', 'approve', '49', '');
-INSERT INTO `hilights` VALUES ('49', null, 'บูรณาการแผนพัฒนาสังคมฯ ระดับกลุ่มจังหวัด', null, null, '4fd6f6ee1e2e2.jpg', '0', '2012-06-12 14:59:43', '2012-06-21 10:37:01', '49', '1', '2012-06-21', '0000-00-00', 'approve', '49', '');
-INSERT INTO `hilights` VALUES ('51', null, 'บูรณาการแผนพัฒนาสังคมฯ ระดับกลุ่มจังหวัด', null, null, '4fd6f7d162d09.jpg', '0', '2012-06-12 15:03:30', '2012-06-21 10:54:35', '49', '1', '2012-06-21', '0000-00-00', 'draft', '269', '');
-INSERT INTO `hilights` VALUES ('52', null, 'บูรณาการแผนพัฒนาสังคมฯ ระดับกลุ่มจังหวัด', null, null, '4fd6f7f167492.jpg', '0', '2012-06-12 15:04:02', '2012-06-21 10:36:55', '49', '1', '2012-06-21', '0000-00-00', 'approve', '269', '');
-INSERT INTO `hilights` VALUES ('54', null, 'บูรณาการแผนพัฒนาสังคมฯ ระดับกลุ่มจังหวัด', null, null, '4fd6fa2629d32.jpg', '0', '2012-06-12 15:13:27', '2012-06-21 10:54:26', '49', '1', '2012-06-21', '0000-00-00', 'draft', '269', '');
-INSERT INTO `hilights` VALUES ('56', null, 'การประชุมเชิงปฏิบัติการพัฒนาศักยภาพเครือข่าย พม. ระดับตำบล', null, null, '4fd8281068c6b.jpg', '0', '2012-06-13 12:41:37', '2012-06-21 10:54:30', '49', '1', '2012-06-21', '0000-00-00', 'draft', '49', '');
-INSERT INTO `hilights` VALUES ('57', null, 'การประชุมเชิงปฏิับัติการพัฒนาศักยภาพเครือข่าย พม. ระดับตำบล', null, null, '4fd8388f9c19e.jpg', '0', '2012-06-13 13:52:00', '2012-06-21 10:36:49', '49', '1', '2012-06-21', '0000-00-00', 'approve', '49', '');
-INSERT INTO `hilights` VALUES ('58', null, 'ผอ.สสว.1 กล่าวเปิดโครงการเตรียมความพร้อมผู้นำชุมชนสู่ประชาคมอาเซียน', null, null, '4fdee73c8e0ea.jpg', '0', '2012-06-18 15:30:53', '2012-06-21 10:36:42', '49', '1', '2012-06-21', '0000-00-00', 'approve', '49', '');
-INSERT INTO `hilights` VALUES ('59', null, 'มอบเงินสงเคราะห์ผู้มีรายได้น้อย จ.นนทบุรี', null, null, '4fe13b0f4c7a2.jpg', '0', '2012-06-20 09:49:39', '2012-06-22 09:06:58', '49', '1', '2012-06-21', '0000-00-00', 'approve', '49', '');
+INSERT INTO `hilights` VALUES ('1', null, 'ทรัพย์เด่น คฤหาสน์หรู บนทำเลพระราม 2 - พุทธบูชา 25', null, null, '5230accd6619c.jpg', '0', '2013-09-12 00:47:57', '2013-09-12 00:47:57', '49', '1', null, null, null, null, 'http://www.facebook.com');
 
 -- ----------------------------
 -- Table structure for `levels`
@@ -454,6 +492,26 @@ CREATE TABLE `levels` (
 -- ----------------------------
 INSERT INTO `levels` VALUES ('1', 'Administrator');
 INSERT INTO `levels` VALUES ('2', 'Member');
+
+-- ----------------------------
+-- Table structure for `links`
+-- ----------------------------
+DROP TABLE IF EXISTS `links`;
+CREATE TABLE `links` (
+  `id` int(11) NOT NULL auto_increment,
+  `slug` varchar(255) default NULL,
+  `title` varchar(255) default NULL,
+  `url` varchar(255) default NULL,
+  `user_id` int(11) default NULL,
+  `created` datetime default NULL,
+  `updated` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of links
+-- ----------------------------
+INSERT INTO `links` VALUES ('1', 'facebook', 'facebook', 'http://www.facebook.com', '49', '2013-09-12 00:00:17', '2013-09-12 00:00:17');
 
 -- ----------------------------
 -- Table structure for `members`
@@ -5692,66 +5750,19 @@ INSERT INTO `user_types` VALUES ('3', 'สมาชิก');
 DROP TABLE IF EXISTS `weblinks`;
 CREATE TABLE `weblinks` (
   `id` int(11) unsigned zerofill NOT NULL auto_increment,
-  `category_id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `url` varchar(255) NOT NULL,
-  `description` text NOT NULL,
-  `target` varchar(10) NOT NULL default '_blank',
-  `image` varchar(25) NOT NULL,
-  `created` datetime NOT NULL,
-  `updated` datetime NOT NULL,
-  `user_id` int(11) NOT NULL,
+  `category_id` int(11) default NULL,
+  `slug` varchar(255) default NULL,
+  `title` varchar(255) default NULL,
+  `url` varchar(255) default NULL,
+  `image` varchar(25) default NULL,
+  `user_id` int(11) default NULL,
+  `created` datetime default NULL,
+  `updated` datetime default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of weblinks
 -- ----------------------------
-INSERT INTO `weblinks` VALUES ('00000000002', '27', 'สสว. 3', 'http://www.tpso3.m-society.go.th/', '', '_blank', '', '2012-05-18 03:06:03', '2012-05-28 15:58:51', '12');
-INSERT INTO `weblinks` VALUES ('00000000003', '27', 'สสว. 4', 'http://www.tpso4.m-society.go.th/', '', '_blank', '', '2012-05-18 03:07:35', '2012-05-28 15:58:58', '12');
-INSERT INTO `weblinks` VALUES ('00000000004', '27', 'สสว. 5', 'http://www.tpso5.m-society.go.th/', '', '_blank', '', '2012-05-18 03:08:15', '2012-05-28 15:59:05', '12');
-INSERT INTO `weblinks` VALUES ('00000000005', '27', 'สสว. 6', 'http://www.tpso6.m-society.go.th/', '', '_blank', '', '2012-05-18 03:08:33', '2012-05-28 15:59:11', '12');
-INSERT INTO `weblinks` VALUES ('00000000006', '27', 'สสว. 7', 'http://www.tpso7.m-society.go.th/', '', '_blank', '', '2012-05-18 03:10:28', '2012-05-28 15:59:17', '12');
-INSERT INTO `weblinks` VALUES ('00000000007', '27', 'สสว. 8', 'http://www.tpso8.m-society.go.th/', '', '_blank', '', '2012-05-18 03:10:43', '2012-05-28 15:59:23', '12');
-INSERT INTO `weblinks` VALUES ('00000000008', '27', 'สสว. 9', 'http://www.tpso9.m-society.go.th/', '', '_blank', '', '2012-05-18 03:10:54', '2012-05-28 15:59:28', '12');
-INSERT INTO `weblinks` VALUES ('00000000009', '27', 'สสว. 10', 'http://www.tpso10.m-society.go.th/', '', '_blank', '', '2012-05-18 03:11:08', '2012-05-28 15:59:38', '12');
-INSERT INTO `weblinks` VALUES ('00000000010', '27', 'สสว. 11', 'http://www.tpso11.m-society.go.th/', '', '_blank', '', '2012-05-18 03:12:07', '2012-05-28 15:59:44', '12');
-INSERT INTO `weblinks` VALUES ('00000000011', '27', 'สสว. 12', 'http://www.tpso12.m-society.go.th/', '', '_blank', '', '2012-05-18 03:12:20', '2012-05-28 15:59:51', '12');
-INSERT INTO `weblinks` VALUES ('00000000012', '157', 'กระทรวงกลาโหม', 'http://www.mod.go.th/', '', '_blank', '', '2012-05-18 03:12:46', '2012-05-28 16:01:13', '12');
-INSERT INTO `weblinks` VALUES ('00000000013', '157', 'กระทรวงการคลัง', 'http://www.mof.go.th/', '', '_blank', '', '2012-05-18 03:13:00', '2012-05-28 16:01:19', '12');
-INSERT INTO `weblinks` VALUES ('00000000014', '157', 'กระทรวงการต่างประเทศ', 'http://www.mfa.go.th/', '', '_blank', '', '2012-05-18 03:13:14', '2012-05-28 16:01:30', '12');
-INSERT INTO `weblinks` VALUES ('00000000015', '157', 'กระทรวงการท่องเที่ยวและกีฬา', 'http://www.mots.go.th/', '', '_blank', '', '2012-05-18 03:13:29', '2012-05-28 16:01:37', '12');
-INSERT INTO `weblinks` VALUES ('00000000016', '157', 'กระทรวงคมนาคม', 'http://www.mot.go.th/', '', '_blank', '', '2012-05-18 03:13:40', '2012-05-28 16:01:48', '12');
-INSERT INTO `weblinks` VALUES ('00000000017', '157', 'กระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม', 'http://www.mnre.go.th/', '', '_blank', '', '2012-05-18 03:13:53', '2012-05-28 16:01:54', '12');
-INSERT INTO `weblinks` VALUES ('00000000018', '157', 'กระทรวงพลังงาน', 'http://www.energy.go.th/', '', '_blank', '', '2012-05-18 03:14:05', '2012-05-28 16:02:01', '12');
-INSERT INTO `weblinks` VALUES ('00000000019', '157', 'กระทรวงพัฒนาสังคมและความมั่นคงของมนุษย์', 'http://www.m-society.go.th/', '', '_blank', '', '2012-05-18 03:14:33', '2012-05-28 16:02:11', '12');
-INSERT INTO `weblinks` VALUES ('00000000020', '157', 'กระทรวงพาณิชย์', 'http://www.moc.go.th/', '', '_blank', '', '2012-05-18 03:14:44', '2012-05-28 16:02:22', '12');
-INSERT INTO `weblinks` VALUES ('00000000021', '157', 'กระทรวงมหาดไทย', 'http://www.moi.go.th/', '', '_blank', '', '2012-05-18 03:16:25', '2012-05-28 16:02:33', '12');
-INSERT INTO `weblinks` VALUES ('00000000022', '157', 'กระทรวงยุติธรรม', 'http://www.moj.go.th/', '', '_blank', '', '2012-05-18 03:16:35', '2012-05-28 16:02:42', '12');
-INSERT INTO `weblinks` VALUES ('00000000023', '157', 'กระทรวงวัฒนธรรม', 'http://www.m-culture.go.th/', '', '_blank', '', '2012-05-18 03:16:45', '2012-05-28 16:02:50', '12');
-INSERT INTO `weblinks` VALUES ('00000000024', '157', 'กระทรวงวิทยาศาสตร์และเทคโนโลยี', 'http://www.most.go.th/', '', '_blank', '', '2012-05-18 03:16:56', '2012-05-28 16:02:57', '12');
-INSERT INTO `weblinks` VALUES ('00000000025', '157', 'กระทรวงศึกษาธิการ', 'http://www.moe.go.th/', '', '_blank', '', '2012-05-18 03:17:08', '2012-05-28 16:03:06', '12');
-INSERT INTO `weblinks` VALUES ('00000000026', '157', 'กระทรวงสาธารณสุข', 'http://www.moph.go.th/', '', '_blank', '', '2012-05-18 03:17:26', '2012-05-28 16:03:13', '12');
-INSERT INTO `weblinks` VALUES ('00000000027', '157', 'กระทรวงอุตสาหกรรม', 'http://www.industry.go.th/', '', '_blank', '', '2012-05-18 03:17:38', '2012-05-28 16:03:21', '12');
-INSERT INTO `weblinks` VALUES ('00000000028', '157', 'กระทรวงเกษตรและสหกรณ์', 'http://www.moac.go.th/', '', '_blank', '', '2012-05-18 03:17:49', '2012-05-28 16:03:31', '12');
-INSERT INTO `weblinks` VALUES ('00000000029', '157', 'กระทรวงเทคโนโลยีสารสนเทศและการสื่อสาร', 'http://www.mict.go.th/', '', '_blank', '', '2012-05-18 03:18:06', '2012-05-28 16:03:39', '12');
-INSERT INTO `weblinks` VALUES ('00000000030', '157', 'กระทรวงแรงงาน', 'http://www.mol.go.th/', '', '_blank', '', '2012-05-18 03:18:25', '2012-05-28 16:03:46', '12');
-INSERT INTO `weblinks` VALUES ('00000000031', '158', 'กรมพัฒนาสังคมและสวัสดิการ', 'http://www.dsdw.go.th', '', '_blank', '', '2012-05-18 03:19:01', '2012-05-28 16:03:54', '12');
-INSERT INTO `weblinks` VALUES ('00000000032', '158', 'การเคหะแห่งชาติ', 'http://www.nhanet.or.th/', '', '_blank', '', '2012-05-18 03:19:15', '2012-05-28 16:04:00', '12');
-INSERT INTO `weblinks` VALUES ('00000000033', '158', 'ศูนย์ปฏิบัติการป้องกันและปราบปรามการค้ามนุษย์แห่งชาติ', 'http://www.humantrafficking.go.th/', '', '_blank', '', '2012-05-18 03:19:27', '2012-05-28 16:04:08', '12');
-INSERT INTO `weblinks` VALUES ('00000000034', '158', 'สถาบันพัฒนาองค์กรชุมชน (องค์กรมหาชน)', 'http://www.codi.or.th/', '', '_blank', '', '2012-05-18 03:19:43', '2012-05-28 16:04:14', '12');
-INSERT INTO `weblinks` VALUES ('00000000035', '158', 'สำนักงานกิจการสตรีและสถาบันครอบครัว', 'http://www.women-family.go.th/', '', '_blank', '', '2012-05-18 03:19:57', '2012-05-28 16:04:21', '12');
-INSERT INTO `weblinks` VALUES ('00000000036', '158', 'สำนักงานธนานุเคราะห์', 'http://www.pawn.co.th/', '', '_blank', '', '2012-05-18 03:20:08', '2012-05-28 16:04:28', '12');
-INSERT INTO `weblinks` VALUES ('00000000037', '158', 'สำนักงานส่งเสริมสวัสดิภาพและพิทักษ์เด็กเยาวชนผู้ด้อยโอกาสและผู้สูงอายุ', 'http://www.opp.go.th/', '', '_blank', '', '2012-05-18 03:20:23', '2012-05-28 16:04:35', '12');
-INSERT INTO `weblinks` VALUES ('00000000038', '158', 'สำนักงานส่งเสริมและพัฒนาคุณภาพชีวิตคนพิการแห่งชาติ', 'http://www.nep.go.th/', '', '_blank', '', '2012-05-18 03:20:37', '2012-05-28 16:04:42', '12');
-INSERT INTO `weblinks` VALUES ('00000000039', '215', 'สำนักงานพัฒนาสังคมและความมั่นคงของมนุษย์จังหวัดสระบุรี', 'http://www.saraburi.m-society.go.th', '', '_blank', '', '2012-06-15 10:23:09', '2012-06-15 11:08:10', '269');
-INSERT INTO `weblinks` VALUES ('00000000041', '215', 'สำนักงานพัฒนาสังคมและความมั่นคงของมนุษย์จังหวัดนนทบุรี', 'http://www.nonthaburi.m-society.go.th', '', '_blank', '', '2012-06-15 11:11:22', '2012-06-15 11:11:22', '49');
-INSERT INTO `weblinks` VALUES ('00000000042', '215', 'สำนักงานพัฒนาสังคมและความมั่นคงของมนุษย์จังหวัดปทุมธานี ', 'http://www.pathumthani.m-society.go.th', '', '_blank', '', '2012-06-15 11:13:09', '2012-06-15 11:13:09', '49');
-INSERT INTO `weblinks` VALUES ('00000000043', '215', 'สำนักงานพัฒนาสังคมและความมั่นคงของมนุษย์จังหวัดพระนครศรีอยุธยา', 'https://www.ayutthaya.m-society.go.th', '', '_blank', '', '2012-06-15 11:14:41', '2012-06-15 11:15:47', '49');
-INSERT INTO `weblinks` VALUES ('00000000044', '214', 'ศูนย์พัฒนาสังคม หน่วยที่ 32 จังหวัดพระนครศรีอยุธยา', 'http://www.sdc32.com', '', '_blank', '', '2012-06-15 11:17:45', '2012-06-15 11:17:45', '49');
-INSERT INTO `weblinks` VALUES ('00000000045', '216', 'ติดต่อ-กรมพัฒนาสังคมและสวัสดิการ', 'http://www.ict.dsdw.in.th', '', '_blank', '', '2012-06-15 11:23:45', '2012-06-15 12:59:25', '49');
-INSERT INTO `weblinks` VALUES ('00000000047', '216', 'ศูนย์ประชาบดี 1300', 'http://www.1300.in.th', '', '_blank', '', '2012-06-15 11:33:58', '2012-06-15 12:51:22', '49');
-INSERT INTO `weblinks` VALUES ('00000000046', '216', 'รายชื่อและที่ตั้งหน่วยงาน กรมพัฒนาสังคมและสวัสดิการ', 'http://www.ict.dsdw.in.th/inst_case/inst_query.php?org_type_code=&cboprovince=&index=3', '', '_blank', '', '2012-06-15 11:25:39', '2012-06-15 12:59:02', '49');
-INSERT INTO `weblinks` VALUES ('00000000051', '27', 'สสว. 2', 'http://www.tpso2.m-society.go.th/', '', '_blank', '', '2012-06-22 09:08:27', '2012-06-22 09:10:04', '49');
-INSERT INTO `weblinks` VALUES ('00000000049', '214', 'ศูนย์พัฒนาสังคม หน่วยที่ 27 จังหวัดปทุมธานี', 'http://sdw27.com/index.html', '', '_blank', '', '2012-06-15 13:17:47', '2012-06-15 13:19:01', '49');
-INSERT INTO `weblinks` VALUES ('00000000050', '214', 'ศูนย์พัฒนาสังคม หน่วยที่ 23 จังหวัดนนทบุรี', 'http://sdc23.webs.com/Homepage.html', '', '_blank', '', '2012-06-15 13:30:07', '2012-06-15 13:30:07', '49');
+INSERT INTO `weblinks` VALUES ('00000000001', '452', '', null, 'http://www.facebook.com', '5230a8f94ecee.png', '49', '2013-09-12 00:31:37', '2013-09-12 00:31:37');
+INSERT INTO `weblinks` VALUES ('00000000002', '452', null, null, 'http://www.facebook.com', '5230a91d6ea33.png', '49', '2013-09-12 00:32:13', '2013-09-12 00:32:13');

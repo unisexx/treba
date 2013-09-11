@@ -5,7 +5,7 @@ class Category extends ORM {
 	
 	var $has_one = array("user");
 	
-	var $has_many = array("member");
+	var $has_many = array("member","weblink");
 
     function __construct($id = NULL)
     {
