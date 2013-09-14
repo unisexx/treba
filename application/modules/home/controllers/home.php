@@ -18,8 +18,8 @@ class Home extends Public_Controller {
 	}
 	
 	function index(){
+	    $this->template->set_layout('home');
 		$this->template->build('index');
-        //$this->output->cache(5);
 	}
 	
 	function intro(){

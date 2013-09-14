@@ -31,7 +31,9 @@ class Bnews extends Admin_Controller
 		if($_POST)
 		{
 			$bnew = new bnew($id);
-            $_POST['slug'] = clean_url($_POST['title']);
+            $_POST['slug'] = clean_url($_POST['title']['th']);
+            $_POST['title'] = lang_encode($_POST['title']);
+            $_POST['detail'] = lang_encode($_POST['detail']);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
 			if($_FILES['image']['name'])
 			{

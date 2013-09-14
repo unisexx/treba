@@ -21,7 +21,9 @@ Class Abouts extends Admin_Controller{
     function save($id=false){
         if($_POST){
             $about = new About($id);
-            $_POST['slug'] = clean_url($_POST['title']);
+            $_POST['slug'] = clean_url($_POST['title']['th']);
+            $_POST['title'] = lang_encode($_POST['title']);
+            $_POST['detail'] = lang_encode($_POST['detail']);
             if(!$id)$_POST['user_id'] = $this->session->userdata('id');
             $about->from_array($_POST);
             $about->save();

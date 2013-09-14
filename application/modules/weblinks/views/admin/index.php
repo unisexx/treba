@@ -6,7 +6,7 @@
 		<th>รูปภาพ</th>
 		<th>url</th>
 		<th>
-			<a rel="lightbox" class="btn" href="categories/admin/categories/weblinks?iframe=true&width=90%&height=90%">หมวดหมู่</a>
+			<!-- <a rel="lightbox" class="btn" href="categories/admin/categories/weblinks?iframe=true&width=90%&height=90%">หมวดหมู่</a> -->
 		</th>
 		<th width="90">
 			<a class="btn" href="weblinks/admin/weblinks/form">เพิ่มรายการ</a>

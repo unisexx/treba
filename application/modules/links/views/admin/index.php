@@ -10,7 +10,7 @@
 	</tr>
 	<?php foreach($links as $row): ?>
 	<tr <?php echo cycle()?>>
-		<td><?php echo $row->title;?></td>
+		<td><?php echo lang_decode($row->title);?></td>
 		<td><?php echo $row->url?></td>
 		<td>
 			<a class="btn" href="links/admin/links/form/<?php echo $row->id?>" >แก้ไข</a>

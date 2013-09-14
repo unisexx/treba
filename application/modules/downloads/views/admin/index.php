@@ -10,7 +10,7 @@
 	</tr>
 	<?php foreach($downloads as $row): ?>
 	<tr <?php echo cycle()?>>
-		<td><?php echo $row->title;?></td>
+		<td><?php echo lang_decode($row->title);?></td>
 		<td><a href="downloads/admin/downloads/download/<?php echo $row->id?>">ดาวน์โหลด</a></td>
 		<td>
 			<a class="btn" href="downloads/admin/downloads/form/<?php echo $row->id?>" >แก้ไข</a>

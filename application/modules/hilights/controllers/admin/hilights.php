@@ -30,6 +30,7 @@ class Hilights extends Admin_Controller
 		{
 			$hilight = new Hilight($id);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
+            $_POST['title'] = lang_encode($_POST['title']);
 			if($_FILES['image']['name'])
 			{
 				if($hilight->id){

@@ -1,14 +1,19 @@
-<!-- Load TinyMCE -->
-<script type="text/javascript" src="media/tiny_mce/tiny_mce.js"></script>
-<script type="text/javascript" src="media/tiny_mce/config.js"></script>
 <script type="text/javascript">
-tiny('detail');
+$(function(){
+    $("[rel=en]").hide();
+    $(".lang a").click(function(){
+        $("[rel=" + $(this).attr("href") + "]").show().siblings().hide();
+        $(this).addClass('active').siblings().removeClass('active');
+        return false;
+    })
+})
 </script>
 
 <h1>ดาวน์โหลดเอกสาร</h1>
 <form id="frmMain" action="downloads/admin/downloads/save/<?php echo $download->id ?>" method="post" enctype="multipart/form-data" >
 	
 <table class="form">
+    <tr class="trlang"><th></th><td class="lang"><a href="th" class="active flag th">ไทย</a><a href="en" class="flag en">อังกฤษ</a></td></tr>
 	<tr>
 		<th></th>
 		<td>
@@ -19,7 +24,8 @@ tiny('detail');
 	<tr>
 		<th>ชื่อไฟล์เอกสาร :</th>
 		<td>
-			<input type="text" name="title" rel="th" value="<?php echo $download->title?>" class="full" />
+			<input rel="th" type="text" name="title[th]" value="<?php echo lang_decode($download->title,'th')?>" class="full" />
+			<input rel="en" type="text" name="title[en]" value="<?php echo lang_decode($download->title,'en')?>" class="full" />
 		</td>
 	</tr>
 	<tr><th></th><td><input type="submit" value="บันทึก" /><?php echo form_back() ?></td></tr>

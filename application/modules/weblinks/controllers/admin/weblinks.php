@@ -1,5 +1,5 @@
 <?php
-class weblinks extends Admin_Controller
+class Weblinks extends Admin_Controller
 {
 	
 	function __construct()
@@ -9,7 +9,7 @@ class weblinks extends Admin_Controller
 	
 	function index()
 	{
-		$data['weblinks'] = new weblink();
+		$data['weblinks'] = new Weblink();
 		$data['weblinks']->order_by('id','desc')->get_page();
 		$this->template->append_metadata(js_lightbox());
 		$this->template->append_metadata(js_checkbox('approve'));
@@ -18,7 +18,7 @@ class weblinks extends Admin_Controller
 	
 	function form($id=FALSE)
 	{
-		$data['weblink'] = new weblink($id);
+		$data['weblink'] = new Weblink($id);
 		$this->template->append_metadata(js_datepicker());
 		$this->template->build('admin/form',$data);
 	}
@@ -27,7 +27,7 @@ class weblinks extends Admin_Controller
 	{
 		if($_POST)
 		{
-			$weblink = new weblink($id);
+			$weblink = new Weblink($id);
             // $_POST['slug'] = clean_url($_POST['title']);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
 			if($_FILES['image']['name'])
@@ -46,7 +46,7 @@ class weblinks extends Admin_Controller
 	{
 		if($_POST)
 		{
-			$weblink = new weblink($id);
+			$weblink = new Weblink($id);
 			$_POST['approve_id'] = $this->session->userdata('id');
 			$weblink->approve_date = date("Y-m-d H:i:s");
 			$weblink->from_array($_POST);
@@ -60,7 +60,7 @@ class weblinks extends Admin_Controller
 	{
 		if($id)
 		{
-			$weblink = new weblink($id);
+			$weblink = new Weblink($id);
 			$weblink->delete();
 			set_notify('success', lang('delete_data_complete'));
 		}

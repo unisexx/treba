@@ -31,7 +31,11 @@ class Members extends Admin_Controller
 		if($_POST)
 		{
 			$member = new member($id);
-            $_POST['slug'] = clean_url($_POST['company']);
+            $_POST['slug'] = clean_url($_POST['company']['th']);
+            $_POST['company'] = lang_encode($_POST['company']);
+            $_POST['name'] = lang_encode($_POST['name']);
+            $_POST['address'] = lang_encode($_POST['address']);
+            $_POST['record'] = lang_encode($_POST['record']);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
 			if($_FILES['image']['name'])
 			{

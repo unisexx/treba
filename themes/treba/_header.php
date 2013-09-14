@@ -57,22 +57,6 @@
             </ul>
         </div>
         
-         <div id="slider" >
-            <div class="titleintro"><img src="themes/treba/images/text_1.png" width="368" height="29" border="0"></div>
-           <div class="namepichilight"><font style="font-size:24px;">ทรัพย์เด่น</font><br>คฤหาสน์หรู บนทำเลพระราม 2 - พุทธบูชา 25 
-           <a href="#"><img src="themes/treba/images/btn_readmore.png" width="45" height="17" border="0" style="margin-left:30px;"></a></div>
-            <ul id="run_highLight">
-                <li id="run_highLight"><a href="#"><img src="themes/treba/images/picHilight_1.jpg" width="732" height="330" border="0"></a></li>
-            </ul>
-        </div>
-        <div id="run">
-            <ul>
-              <li class="run1"><a href="#">&nbsp;</a></li>
-              <li class="run2"><a href="#">&nbsp;</a></li>
-              <li class="run3"><a href="#">&nbsp;</a></li>
-              <li class="run_prv"><a href="#">&nbsp;</a></li>
-              <li class="run_next"><a href="#">&nbsp;</a></li>
-            </ul>
-        </div>
+        <?php echo modules::run('hilights/inc_home'); ?>
         </div>
         <div class="clr"></div>

@@ -31,7 +31,8 @@ class Downloads extends Admin_Controller
 		if($_POST)
 		{
 			$download = new Download($id);
-            $_POST['slug'] = clean_url($_POST['title']);
+            $_POST['slug'] = clean_url($_POST['title']['th']);
+            $_POST['title'] = lang_encode($_POST['title']);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
 			if($_FILES['file']['name'])
 			{

@@ -31,7 +31,8 @@ class Links extends Admin_Controller
 		if($_POST)
 		{
 			$link = new Link($id);
-            $_POST['slug'] = clean_url($_POST['title']);
+            $_POST['slug'] = clean_url($_POST['title']['th']);
+            $_POST['title'] = lang_encode($_POST['title']);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
 			$link->from_array($_POST);
 			$link->save();
