@@ -73,6 +73,7 @@ class Downloads extends Admin_Controller
     function download($id){
         if($id){
             $download = new Download($id);
+            $download->counter();
             $data = file_get_contents('uploads/download/'.urldecode($download->file));
             $name = basename($download->file);
             force_download($name, $data); 

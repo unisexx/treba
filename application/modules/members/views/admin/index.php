@@ -10,6 +10,7 @@
 <table class="list">
 	<tr>
 		<!-- <th width="70">แสดง</th> -->
+		<th>รหัส</th>
 		<th>ชื่อบริษัท</th>
 		<th>ชื่อผู้ประกอบการ</th>
 		<th>
@@ -22,9 +23,10 @@
 	<?php foreach($members as $row): ?>
 	<tr <?php echo cycle()?>>
 		<!-- <td><input type="checkbox" name="status" value="<?php echo $row->id ?>" <?php echo ($row->status=="approve")?'checked="checked"':'' ?> /></td> -->
+		<td><?php echo $row->code?></td>
 		<td><?php echo lang_decode($row->company);?></td>
 		<td><?php echo lang_decode($row->name)?></td>
-		<td><?php echo anchor('members/admin/members?category_id='.$row->category_id,$row->category->name) ?></td>
+		<td><?php echo anchor('members/admin/members?category_id='.$row->category_id,lang_decode($row->category->name)) ?></td>
 		<td>
 			<a class="btn" href="members/admin/members/form/<?php echo $row->id?>" >แก้ไข</a><a class="btn" href="members/admin/members/delete/<?php echo $row->id?>" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')">ลบ</a>
 		</td>

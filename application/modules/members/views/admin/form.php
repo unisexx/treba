@@ -22,6 +22,12 @@ $(function(){
 	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr>
 	<tr><th>ประเภท :</th><td><?php echo form_dropdown('category_id',$member->category->get_option(),$member->category_id,'');?></td></tr>
 	<tr>
+        <th>รหัส :</th>
+        <td>
+            <input rel="th" type="text" name="code" value="<?php echo ($member->code)?>" class="full" />
+        </td>
+    </tr>
+	<tr>
 		<th>ชื่อบริษัท :</th>
 		<td>
 			<input rel="th" type="text" name="company[th]" value="<?php echo lang_decode($member->company,'th')?>" class="full" /> 
@@ -44,7 +50,7 @@ $(function(){
     </tr><tr>
         <th>โทรศัพท์ :</th>
         <td>
-            <input rel="th" type="text" name="tel" value="<?php echo lang_decode($member->tel,'th')?>" class="full" />
+            <input rel="th" type="text" name="tel" value="<?php echo $member->tel?>" class="full" />
         </td>
     </tr><tr>
         <th>โทรสาร :</th>
