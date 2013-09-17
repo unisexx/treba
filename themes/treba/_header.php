@@ -12,8 +12,8 @@
            
             <div class="flag">
                 <ul>
-                    <li><a href="#" title="ภาษาไทย"><img src="themes/treba/images/flag_thai.png" width="26" height="20" border="0"></a></li>
-                    <li><a href="#" title="English"><img src="themes/treba/images/flag_eng.png" width="26" height="20" border="0"></a></li>
+                    <li><a href="home/lang/th" title="ภาษาไทย"><img src="themes/treba/images/flag_thai.png" width="26" height="20" border="0"></a></li>
+                    <li><a href="home/lang/en" title="English"><img src="themes/treba/images/flag_eng.png" width="26" height="20" border="0"></a></li>
                     <li><a href="#" title="Facebook"><img src="themes/treba/images/icon_FB.png" width="20" height="20" border="0"></a></li>
                 </ul>
             </div>

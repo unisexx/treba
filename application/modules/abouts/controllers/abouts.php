@@ -3,13 +3,17 @@ class Abouts extends Public_Controller{
 	
 	function __construct(){
 		parent::__construct();
-		$this->template->set_theme('tpso1');
-		$this->template->set_layout('about');
 	}
 	
-	function index($id){
-		$data['about'] = new About($id);
-		$this->template->build('about_index',$data);
+	function inc_home(){
+	    $data['abouts'] = new About();
+        $data['abouts']->order_by('id','desc')->get();
+	    $this->load->view('inc_home',$data);
 	}
+    
+    function view($id){
+        $data['about'] = new About($id);
+        $this->template->build('view',$data);
+    }
 }
 ?>
