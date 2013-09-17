@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50045
 File Encoding         : 65001
 
-Date: 2013-09-17 07:34:57
+Date: 2013-09-18 02:27:33
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -342,14 +342,20 @@ CREATE TABLE `downloads` (
   `user_id` int(11) default NULL,
   `created` datetime default NULL,
   `updated` datetime default NULL,
+  `counter` int(11) default '0',
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of downloads
 -- ----------------------------
-INSERT INTO `downloads` VALUES ('1', 'เอกสารที่-1', '{\"th\":\"เอกสารที่ 1\",\"en\":\"เอกสารที่ 1\"}', '5230994eab905.png', '49', '2013-09-11 23:24:46', '2013-09-14 09:11:01');
-INSERT INTO `downloads` VALUES ('2', 'เอกสารที่-2', '{\"th\":\"เอกสารที่ 2\",\"en\":\"เอกสารที่ 2\"}', '52309984ef6c1.txt', '49', '2013-09-11 23:25:41', '2013-09-14 09:11:15');
+INSERT INTO `downloads` VALUES ('1', 'ใบต่ออายุสมาชิก', '{\"th\":\"ใบต่ออายุสมาชิก\",\"en\":\"ใบต่ออายุสมาชิก\"}', '5238a10a18af3.pdf', '49', '2013-09-11 23:24:46', '2013-09-18 02:16:28', '0');
+INSERT INTO `downloads` VALUES ('2', 'ใบสมัครสมาชิกวิสามัญบุคคลธรรมดา', '{\"th\":\"ใบสมัครสมาชิกวิสามัญบุคคลธรรมดา\",\"en\":\"ใบสมัครสมาชิกวิสามัญบุคคลธรรมดา\"}', '5238a13f870dc.pdf', '49', '2013-09-11 23:25:41', '2013-09-18 02:17:16', '0');
+INSERT INTO `downloads` VALUES ('3', 'ใบสมัครสมาชิกสมทบ', '{\"th\":\"ใบสมัครสมาชิกสมทบ\",\"en\":\"ใบสมัครสมาชิกสมทบ\"}', '5238a170c6e96.pdf', '49', '2013-09-18 01:37:36', '2013-09-18 02:18:24', '0');
+INSERT INTO `downloads` VALUES ('4', 'ใบสมัครสมาชิกสามัญนิติบุคคล', '{\"th\":\"ใบสมัครสมาชิกสามัญนิติบุคคล\",\"en\":\"ใบสมัครสมาชิกสามัญนิติบุคคล\"}', '5238a1a136b6b.pdf', '49', '2013-09-18 01:38:25', '2013-09-18 02:18:11', '0');
+INSERT INTO `downloads` VALUES ('5', 'ใบสมัครสอบ', '{\"th\":\"ใบสมัครสอบ\",\"en\":\"ใบสมัครสอบ\"}', '5238a1b81c35a.pdf', '49', '2013-09-18 01:38:48', '2013-09-18 02:17:08', '0');
+INSERT INTO `downloads` VALUES ('6', 'แผนที่', '{\"th\":\"แผนที่\",\"en\":\"แผนที่\"}', '5238a1cc8fb5c.pdf', '49', '2013-09-18 01:39:08', '2013-09-18 02:17:05', '0');
+INSERT INTO `downloads` VALUES ('7', 'เฉลยข้อสอบสมาคมนายหน้าอสังหาริมทรัพย์ไทย', '{\"th\":\"เฉลยข้อสอบสมาคมนายหน้าอสังหาริมทรัพย์ไทย\",\"en\":\"เฉลยข้อสอบสมาคมนายหน้าอสังหาริมทรัพย์ไทย\"}', '5238a1e5297c6.pdf', '49', '2013-09-18 01:39:33', '2013-09-18 02:15:39', '0');
 
 -- ----------------------------
 -- Table structure for `galleries`
@@ -531,6 +537,7 @@ CREATE TABLE `members` (
   `id` int(11) NOT NULL auto_increment,
   `category_id` int(11) default NULL,
   `slug` varchar(255) default NULL,
+  `code` varchar(30) default NULL,
   `company` text,
   `image` varchar(255) default NULL,
   `name` varchar(255) default NULL,
@@ -550,7 +557,7 @@ CREATE TABLE `members` (
 -- ----------------------------
 -- Records of members
 -- ----------------------------
-INSERT INTO `members` VALUES ('1', '447', null, '{\"th\":\"company\",\"en\":\"company\"}', '522f78f3ac99a.png', '{\"th\":\"name\",\"en\":\"name\"}', '{\"th\":\"address\",\"en\":\"address\"}', '1234567890', 'fax', 'mobile', 'website', 'example@example.com', '{\"th\":\"record\",\"en\":\"record\"}', '49', '2013-09-11 02:54:27', '2013-09-14 08:23:23');
+INSERT INTO `members` VALUES ('1', '447', 'company', 'REBA 4002-049-001', '{\"th\":\"company\",\"en\":\"company\"}', '522f78f3ac99a.png', '{\"th\":\"name\",\"en\":\"name\"}', '{\"th\":\"address\",\"en\":\"address\"}', '1234567890', 'fax', 'mobile', 'website', 'example@example.com', '{\"th\":\"record\",\"en\":\"record\"}', '49', '2013-09-11 02:54:27', '2013-09-18 01:11:56');
 
 -- ----------------------------
 -- Table structure for `newsletters`
