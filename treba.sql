@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50045
 File Encoding         : 65001
 
-Date: 2013-09-18 02:27:33
+Date: 2013-09-19 01:36:57
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -303,6 +303,25 @@ CREATE TABLE `contacts` (
 -- ----------------------------
 INSERT INTO `contacts` VALUES ('24', null, '6271', null, null, '2012hsumyatsandyhtun@gmail.com', '203.81.72.86');
 INSERT INTO `contacts` VALUES ('25', null, 'yuya_chin1732@hotmail.com', null, null, 'ตอบกระทู้แล้ว  แต่ทำไมตัวกดไลท์ไม่ขึ้นให้กดค่ะ\nหรือบางทีก็ขึ้นให้  แต่พอเมื่อตอบกระทู้และกดไลท์แล้วตัวเนื้อหาที่ซ่อนอยู่กลับไม่หายไป\nลองlogout ออกแล้วเข้าใหม่ก็ยังเป็นเหมือนเดิม\nลองเช็คที่ facebook ก็ยังเข้าได้ปกติ ค่ะ\nช่วยหน่อยค่ะ  เป็นมาหลายครั้งแล้ว\nหลายเดือนแล้วด้วยที่บ้างที่ก็ได้บางทีก็ไม่ได้(แต่ไม่ได้เยอะกว่า)', '180.180.184.192');
+
+-- ----------------------------
+-- Table structure for `contact_details`
+-- ----------------------------
+DROP TABLE IF EXISTS `contact_details`;
+CREATE TABLE `contact_details` (
+  `id` int(11) NOT NULL auto_increment,
+  `title` varchar(255) default NULL,
+  `slug` varchar(255) default NULL,
+  `detail` text,
+  `user_id` int(11) default NULL,
+  `created` datetime default NULL,
+  `updated` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of contact_details
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `coverpages`
@@ -5758,8 +5777,6 @@ CREATE TABLE `user_types` (
 -- Records of user_types
 -- ----------------------------
 INSERT INTO `user_types` VALUES ('1', 'ผู้ดูแลระบบ');
-INSERT INTO `user_types` VALUES ('2', 'moderator');
-INSERT INTO `user_types` VALUES ('3', 'สมาชิก');
 
 -- ----------------------------
 -- Table structure for `weblinks`

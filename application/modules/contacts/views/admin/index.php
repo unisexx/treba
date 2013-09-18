@@ -11,10 +11,8 @@
 		<td><?php echo $contact->detail ?></td>
 		<td><?php echo $contact->ip ?></td>
 		<td>
-			<a class="btn" href="contacts/admin/contacts/form/<?php echo $contact->id?>" >รายละเอียด</a> 
-			<?php if(permission('contacts', 'delete')):?>
+			<a class="btn" href="contacts/admin/contacts/form/<?php echo $contact->id?>" >รายละเอียด</a>
 			<a class="btn" href="contacts/admin/contacts/delete/<?php echo $contact->id?>" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')">ลบ</a>
-			<?php endif;?>
 		</td>
 		</tr>
 		<?php endforeach; ?>

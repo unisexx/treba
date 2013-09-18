@@ -8,6 +8,7 @@
     <li <?php echo menu_active('links','links')?>><a href="links/admin/links">ลิ้งค์ข้อความ</a></li>
     <li <?php echo menu_active('weblinks','weblinks')?>><a href="weblinks/admin/weblinks">ลิ้งค์รูปภาพ</a></li>
     <li <?php echo menu_active('hilights','hilights')?>><a href="hilights/admin/hilights">ไฮไลท์</a></li>
+    <li <?php echo menu_active('contacts','contacts')?>><a href="contacts/admin/contacts">ติดต่อเรา</a></li>
     <!-- <li <?php echo menu_active('users','administrators')?>><a href="users/admin/administrators">Administrator</a></li>
 	<li <?php echo menu_active('dashboards','dashboards')?>><a href="dashboards/admin/dashboards">Statistics</a></li>
 	<li <?php echo menu_active('users','users')?>><a href="users/admin/users">Member</a></li>
