@@ -1,4 +1,5 @@
 <h1>ติดต่อสอบถาม</h1>
+<?php require_once '_menu.php';?>
 <?php echo $contacts->pagination()?>
 <table class="list">
 	<tr>

@@ -6,8 +6,9 @@ class Contacts extends Public_Controller{
 	}
 	
 	function index(){
-	    $this->template->title("ติดต่อเรา");
-		$this->template->build('contacts_index');
+		$id = 1;
+		$data['contact'] = new Contact_detail($id);
+		$this->template->build('index',$data);
 	}
     
     function save(){
