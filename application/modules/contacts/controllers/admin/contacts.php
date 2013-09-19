@@ -30,7 +30,5 @@ class contacts extends Admin_Controller
 		}
 		redirect($_SERVER['HTTP_REFERER']);
 	}
-	
-
 }
 ?>

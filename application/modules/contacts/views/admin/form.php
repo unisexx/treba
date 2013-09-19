@@ -1,4 +1,5 @@
 <h1>ติดต่อสอบถาม</h1>
+<?php require_once '_menu.php';?>
 <table class="form2">
 	<tr>
 		<th>ชื่อ-นามสกุล: </th>
