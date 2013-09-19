@@ -6,6 +6,7 @@
 <title>สมาคมนายหน้าอสังหาริมทรัพย์ไทย</title>
 <?php include_once('_css.php')?>
 <?php include_once('_script.php')?>
+<?php echo $template['metadata']; ?>
 </head>
 
 <body>

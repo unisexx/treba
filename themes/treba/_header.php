@@ -24,7 +24,7 @@
             <div id="menu_gray">
                 <ul>
                     <li><a href="contacts"><img src="themes/treba/images/btn_contact.jpg" width="92" height="17" border="0"></a></li>
-                    <li><a href="#"><img src="themes/treba/images/btn_sitemap.jpg" width="92" height="17" border="0"></a></li>
+                    <li><a href="sitemaps"><img src="themes/treba/images/btn_sitemap.jpg" width="92" height="17" border="0"></a></li>
                 </ul>
             </div>
              <div id="topmenu">

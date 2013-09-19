@@ -6,6 +6,7 @@
 <title><?php echo $template['title']; ?></title>
 <?php include_once('_css.php')?>
 <?php include_once('_script.php')?>
+<?php echo $template['metadata']; ?>
 <style type="text/css">
     #menuabout{top:17px !important;}
     #FB{top:40px !important;}
