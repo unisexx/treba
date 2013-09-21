@@ -42,10 +42,14 @@ $active_group = 'default';
 $active_record = TRUE;
 
 
+// $db['default']['hostname'] = 'localhost';
+// $db['default']['username'] = 'root';
+// $db['default']['password'] = '1234';
+// $db['default']['database'] = 'treba';
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '1234';
-$db['default']['database'] = 'treba';
+$db['default']['username'] = 'tastydsign_treba';
+$db['default']['password'] = 'tasty';
+$db['default']['database'] = 'tastydsign_treba';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
