@@ -1,4 +1,4 @@
-<div id="newsevent"><img src="themes/treba/images/title_newsevent.jpg" width="151" height="20" /><a href="bnews"><div class="btn_readAll"></div></a><div class="line2"></div>
+<div class="breadcrumbs"><span class="text_breadcrumbs">ข่าวสารและกิจกรรม</span></div>
             
     <div id="contentNewsEvent" style="padding-top:6px;">
             <ul>
@@ -18,4 +18,3 @@
             <?php echo $bnews->pagination()?>
           
       </div>
- </div>
