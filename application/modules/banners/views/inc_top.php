@@ -1,1 +1,0 @@
-<a href="<?=$banner_top->url?>" target="_blank"><img src="<?=$banner_top->image?>" alt="<?php echo $banner_top->title?>" width="<?=$banner_top->width?>" height="<?=$banner_top->height?>"></a>

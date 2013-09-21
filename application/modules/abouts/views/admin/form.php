@@ -30,6 +30,18 @@ $(function(){
                 <div rel="en"><textarea name="detail[en]" class="full tinymce"><?php echo lang_decode($about->detail,'en')?></textarea></div>
             </td>
         </tr>
+        <tr>
+            <th>url :</th>
+            <td>
+                <input  type="text" name="url" value="<?php echo $about->url?>" class="full"/>
+            </td>
+        </tr>
+        <tr>
+            <th>ไฟล์แนบ :</th>
+            <td>
+                <input type="file" name="file" />
+            </td>
+        </tr>
         <tr>    
             <th></th>
             <td>

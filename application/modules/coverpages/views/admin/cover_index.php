@@ -17,29 +17,25 @@
 <?php echo $coverpages->pagination()?>
 <table class="list">
 	<tr>
-		<th width="70">แสดง</th>
+		<!-- <th width="70">แสดง</th>
 		<th>เริ่มวันที่</th>
-		<th>หัวข้อ</th>
+		<th>หัวข้อ</th> -->
+		<th>รูปภาพ</th>
 		<th>โดย</th>
 		<th width="90">
-			<?php if(permission('coverpages', 'create')):?>
-			<a class="btn" href="coverpages/admin/coverpages/form">เพิ่มรายการ</a>
-			<?php endif;?>
+			<!-- <a class="btn" href="coverpages/admin/coverpages/form">เพิ่มรายการ</a> -->
 		</th>
 	</tr>
 	<?php foreach($coverpages as $coverpage):?>
 		<tr>
-			<td><input type="radio" name="active" value="<?php echo $coverpage->id ?>" <?php echo ($coverpage->active==1)?"checked='checked'":''?> /></td>
+			<!-- <td><input type="radio" name="active" value="<?php echo $coverpage->id ?>" <?php echo ($coverpage->active==1)?"checked='checked'":''?> /></td>
 			<td><?=$coverpage->start_date?></td>
-			<td><?=$coverpage->title?></td>
+			<td><?=$coverpage->title?></td> -->
+			<td><?php echo thumb("uploads/coverpage/".$coverpage->image,200,false,1)?></td>
 			<td><?=$coverpage->user->display?></td>
 			<td>
-				<?php if(permission('coverpages', 'update')):?>
 				<a class="btn" href="coverpages/admin/coverpages/form/<?php echo $coverpage->id?>" class="btn">แก้ไข</a>
-				<?php endif;?>
-				<?php if(permission('coverpages', 'delete')):?>
-				<a class="btn" href="coverpages/admin/coverpages/delete/<?php echo $coverpage->id?>" class="btn" onclick="return confirm('<?php echo lang('notice_confirm_delete')?>')">ลบ</a>
-				<?php endif;?>
+				<!-- <a class="btn" href="coverpages/admin/coverpages/delete/<?php echo $coverpage->id?>" class="btn" onclick="return confirm('<?php echo lang('notice_confirm_delete')?>')">ลบ</a> -->
 			</td>
 		</tr>
 	<?php endforeach;?>

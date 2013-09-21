@@ -1,13 +1,15 @@
 <ul class="menu">
     <li <?php echo menu_active('users','administrators')?>><a href="users/admin/administrators">แอดมิน</a></li>
-    <li <?php echo menu_active('dashboards','dashboards')?>><a href="dashboards/admin/dashboards">สถิติเว็บไซต์</a></li>
+    <!-- <li <?php echo menu_active('dashboards','dashboards')?>><a href="dashboards/admin/dashboards">สถิติเว็บไซต์</a></li> -->
+    <li <?php echo menu_active('coverpages','coverpages')?> ><a href="coverpages/admin/coverpages">หน้าแรก</a></li>
+    <li <?php echo menu_active('hilights','hilights')?>><a href="hilights/admin/hilights">ไฮไลท์</a></li>
     <li <?php echo menu_active('abouts','abouts')?>><a href="abouts/admin/abouts">เกี่ยวกับสมาคม</a></li>
     <li <?php echo menu_active('members','members')?>><a href="members/admin/members">เกี่ยวกับสมาชิก</a></li>
     <li <?php echo menu_active('bnews','bnews')?>><a href="bnews/admin/bnews">ข่าวสารและกิจกรรม</a></li>
     <li <?php echo menu_active('downloads','downloads')?>><a href="downloads/admin/downloads">ดาวน์โหลดเอกสาร</a></li>
     <li <?php echo menu_active('links','links')?>><a href="links/admin/links">ลิ้งค์ข้อความ</a></li>
     <li <?php echo menu_active('weblinks','weblinks')?>><a href="weblinks/admin/weblinks">ลิ้งค์รูปภาพ</a></li>
-    <li <?php echo menu_active('hilights','hilights')?>><a href="hilights/admin/hilights">ไฮไลท์</a></li>
+    <li <?php echo menu_active('banners','banners')?>><a href="banners/admin/banners/form/1">แบนเนอร์</a></li>
     <li <?php echo menu_active('contacts','contact_details')?>><a href="contacts/admin/contact_details/form/1">ติดต่อเรา</a></li>
     <!-- <li <?php echo menu_active('users','administrators')?>><a href="users/admin/administrators">Administrator</a></li>
 	<li <?php echo menu_active('dashboards','dashboards')?>><a href="dashboards/admin/dashboards">Statistics</a></li>

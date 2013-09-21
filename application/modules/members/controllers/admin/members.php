@@ -10,9 +10,9 @@ class Members extends Admin_Controller
 	function index()
 	{
 		$data['members'] = new member();
-		if(@$_GET['search'])$data['members']->where("title like '%".$_GET['search']."%'");
-		if(@$_GET['status'])$data['members']->where('status',$_GET['status']);
-		if(@$_GET['category_id'])$data['members']->where("category_id = ".$_GET['category_id']);
+		if(@$_GET['code'])$data['members']->where("code like '%".$_GET['code']."%'");
+		if(@$_GET['company'])$data['members']->where("company like '%".$_GET['company']."%'");
+		// if(@$_GET['category_id'])$data['members']->where("category_id = ".$_GET['category_id']);
 		$data['members']->order_by('id','desc')->get_page();
 		$this->template->append_metadata(js_lightbox());
 		$this->template->append_metadata(js_checkbox('approve'));

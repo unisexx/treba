@@ -16,12 +16,12 @@
           <div class="btn_more1"><a href="#">&nbsp;</a></div>
       <div class="line1"></div>
           
-          <div class="bannerPR">
+          <!-- <div class="bannerPR">
           <div style="float:left; width:354px;">
           <a href="#"><img src="themes/treba/images/banner1.jpg" width="354" height="125" border="0"></a>
           <a href="#"><img src="themes/treba/images/banner2.jpg" width="354" height="103" border="0" style="margin-top:8px;"></a></div>
           <div style="float:right; margin-left:15px;"><a href="#"><img src="themes/treba/images/banner3.jpg" width="355" height="236" border="0"></a></div>
-          </div>
+          </div> -->
           
           
       </div>

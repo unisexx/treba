@@ -24,6 +24,8 @@
        
        <div id="col_2a">
            <?php echo modules::run('bnews/inc_home'); ?>
+           <br clear="all"><br><br>
+           <?php echo modules::run('banners/inc_home'); ?>
        </div>
       <div class="clr"></div>
         

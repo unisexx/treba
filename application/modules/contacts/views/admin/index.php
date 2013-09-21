@@ -3,6 +3,7 @@
 <?php echo $contacts->pagination()?>
 <table class="list">
 	<tr>
+	    <th>หัวข้อ</th>
 		<th>รายละเอียด</th>
 		<th>อีเมล์</th>
 		<th>IP</th>
@@ -10,6 +11,7 @@
 	</tr>
 	<?php foreach($contacts as $contact): ?>
 	<tr <?php echo cycle()?>>
+	    <td><?php echo $contact->title?></td>
 	    <td><?php echo $contact->detail ?></td>
 	    <td><?php echo $contact->email?></td>
 		<td><?php echo $contact->ip ?></td>

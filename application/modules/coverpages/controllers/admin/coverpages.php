@@ -23,8 +23,13 @@ class Coverpages extends Admin_Controller
 		if($_POST){
 			$coverpage = new Coverpage($id);
 			if(!$id)$_POST['user_id'] = $this->session->userdata('id');
-			$_POST['start_date'] = Date2DB($_POST['start_date']);
-			$_POST['end_date'] = Date2DB($_POST['end_date']);
+            if($_FILES['image']['name'])
+            {
+                if($id)$coverpage->delete_file($coverpage->id,'uploads/coverpage/thumbnail','image');
+                $coverpage->image = $coverpage->upload($_FILES['image'],'uploads/coverpage/');
+            }
+			// $_POST['start_date'] = Date2DB($_POST['start_date']);
+			// $_POST['end_date'] = Date2DB($_POST['end_date']);
 			$coverpage->from_array($_POST);
 			$coverpage->save();
 			set_notify('success', lang('save_data_complete'));

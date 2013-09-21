@@ -2,7 +2,7 @@
             <div class="clr"></div>
               <div id="menuleft">
                 <ul>
-                    <li><a href="#"><img src="themes/treba/images/menuleft_aboutus.jpg" width="190" height="29" border="0"></a></li>
+                    <li><a href="abouts"><img src="themes/treba/images/menuleft_aboutus.jpg" width="190" height="29" border="0"></a></li>
                     <li><a href="downloads"><img src="themes/treba/images/menuleft_register.jpg" width="190" height="29" border="0"></a></li>
                     <li><a href="downloads/download/1"><img src="themes/treba/images/menuleft_member.jpg" width="190" height="29" border="0"></a></li>
                 </ul>
@@ -14,7 +14,7 @@
                 <ul>
                     <li><a href="home/lang/th" title="ภาษาไทย"><img src="themes/treba/images/flag_thai.png" width="26" height="20" border="0"></a></li>
                     <li><a href="home/lang/en" title="English"><img src="themes/treba/images/flag_eng.png" width="26" height="20" border="0"></a></li>
-                    <li><a href="#" title="Facebook"><img src="themes/treba/images/icon_FB.png" width="20" height="20" border="0"></a></li>
+                    <li><a href="https://www.facebook.com/pages/สมาคมนายหน้าอสังหาริมทรัพย์/185279518166176?fref=ts" title="Facebook" target="_blank"><img src="themes/treba/images/icon_FB.png" width="20" height="20" border="0"></a></li>
                 </ul>
             </div>
             

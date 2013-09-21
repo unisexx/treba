@@ -7,14 +7,20 @@ class Abouts extends Public_Controller{
 	
 	function inc_home(){
 	    $data['abouts'] = new About();
-        $data['abouts']->order_by('id','desc')->get();
+        $data['abouts']->order_by('orderlist','asc')->get();
 	    $this->load->view('inc_home',$data);
 	}
     
     function inc_header(){
         $data['abouts'] = new About();
-        $data['abouts']->order_by('id','desc')->get();
+        $data['abouts']->order_by('orderlist','asc')->get();
         $this->load->view('inc_header',$data);
+    }
+    
+    function index(){
+        $data['abouts'] = new About();
+        $data['abouts']->order_by('orderlist','asc')->get();
+        $this->template->build('index',$data);
     }
     
     function view($id){

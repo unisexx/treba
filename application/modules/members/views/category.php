@@ -1,5 +1,5 @@
 <style>
-.tbmember{width:100%;border:1px solid green;border-collapse:collapse;}
+.tbmember{width:100%;border:1px solid green;border-collapse:collapse;margin-bottom:15px;}
 .tbmember th{background:#78a40f;color:#ffffff;padding: 5px;}
 .tbmember td{border:1px solid green;}
 </style>
@@ -20,7 +20,11 @@
 				</td>
 				<td style="text-align: center;">
 					<div style="font-weight: bold;"><?php echo lang_decode($row->company)?></div>
-					<image src="uploads/member/<?php echo $row->image?>" width="200" height="200">
+					<?php if($row->image != ""):?>
+                        <?php echo thumb("uploads/member/".$row->image,200,false,1);?>
+                    <?php else:?>
+                        <?php echo thumb("themes/treba/images/company_logo.jpg",200,false,1);?>
+                    <?php endif;?>
 				</td>
 				<td>
 					<table class="tbdetail">

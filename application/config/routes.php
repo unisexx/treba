@@ -32,8 +32,8 @@
 | would be loaded.
 */
 
-//$route['default_controller'] = "home/first_page";
-$route['default_controller'] = "home";
+$route['default_controller'] = "home/first_page";
+//$route['default_controller'] = "home";
 $route['admin'] = 'users/admin/auth/login';
 
 $route['vdos/admin/vdos/([^/]+)/form'] = "vdos/admin/vdos/form/$1";

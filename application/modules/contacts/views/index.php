@@ -9,6 +9,10 @@
 	<div style="margin:30px 0 0 0;">
 		<form id="contact-frm" class="form-horizontal" method="post" action="contacts/save">
 			<table class="contact-frm">
+			    <tr>
+                    <th>หัวข้อ :</th>
+                    <td><input type="text" name="title" style="width:440px;"></td>
+                </tr>
 				<tr>
 					<th>รายละเอียด :</th>
 					<td><textarea id="inputDetail" name="detail" rows="5" cols="70" class="input-xlarge"></textarea></td>

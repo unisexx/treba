@@ -16,7 +16,11 @@ $(function(){
 	<tr>
 		<th></th>
 		<td>
-			<?php if($member->image != ""):?><?php echo thumb("uploads/member/".$member->image,120,false,1);?><?php endif;?>
+			<?php if($member->image != ""):?>
+			    <?php echo thumb("uploads/member/".$member->image,120,false,1);?>
+			<?php else:?>
+			    <?php echo thumb("themes/treba/images/company_logo.jpg",120,false,1);?>
+			<?php endif;?>
 		</td>
 	</tr>
 	<tr><th>รูปภาพ :</th><td><input type="file" name="image" /></td></tr>

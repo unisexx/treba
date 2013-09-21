@@ -35,7 +35,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>สำนักงานส่งเสริมและสนับสนุนวิชาการ ๑</title>
+	<title>สมาคมนายหน้าอสังหาริมทรัพย์ไทย</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script>
 	<script type="text/javascript" src="../../media/js/cufon/cufon-yui.js"></script>
 	<script type="text/javascript" src="../../media/js/cufon/supermarket_400.font.js"></script>
@@ -53,9 +53,9 @@
 <body style="background:<?=$coverpage->background?>; color:<?=$fore_color?>;">
   <div class="block">
   	<center>
-  		<img src="../../<?=$coverpage->image?>">
+  		<img src="../../uploads/coverpage/<?=$coverpage->image?>">
   		<br /><br />
-  		<a href="/new/home">เข้าสู่เว็บไซต์สำนักงานส่งเสริมและสนับสนุนวิชาการ ๑</a>
+  		<a href="/home">เข้าสู่เว็บไซต์สมาคมนายหน้าอสังหาริมทรัพย์ไทย</a>
   	</center>
   </div>
 </body>

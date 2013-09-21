@@ -1,11 +1,16 @@
 <h1>เกี่ยวกับสมาชิก</h1>
-<!-- <div class="search">
+<div class="search">
 	<form method="get">
 		<table class="form">
-			<tr><th>หัวข้อ</th><td><input type="text" name="search" value="<?php echo (isset($_GET['search']))?$_GET['search']:'' ?>" /></td><th>หมวดหมู่</th><td><?php echo form_dropdown('category_id',$members->category->get_option(),@$_GET['category_id'],'','ทั้งหมด') ?></td><td><input type="submit" value="ค้นหา" /></td></tr>
+			<tr>
+			    <th>รหัส</th><td><input type="text" name="code" value="<?php echo (isset($_GET['code']))?$_GET['code']:'' ?>" /></td>
+			    <th>ชื่อบริษัท</th><td><input type="text" name="company" value="<?php echo (isset($_GET['company']))?$_GET['company']:'' ?>" /></td>
+			    <!-- <th>หมวดหมู่</th><td><?php echo form_dropdown('category_id',$members->category->get_option(),@$_GET['category_id'],'','ทั้งหมด') ?></td> -->
+			    <td><input type="submit" value="ค้นหา" /></td>
+			</tr>
 		</table>
 	</form>
-</div> -->
+</div>
 <?php echo $members->pagination()?>
 <table class="list">
 	<tr>
