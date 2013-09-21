@@ -13,7 +13,7 @@
         <li><a href="#">เกี่ยวกับสมาคม</a>
             <ul>
                 <?php foreach($abouts as $row):?>
-                    <li><a href="bnews/view/<?php echo $row->id?>"><?php echo lang_decode($row->title)?></a></li>
+                    <li><a href="abouts/view/<?php echo $row->id?>"><?php echo lang_decode($row->title)?></a></li>
                 <?php endforeach;?>
             </ul>
         </li>
