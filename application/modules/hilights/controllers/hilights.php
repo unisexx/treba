@@ -10,7 +10,7 @@ class Hilights extends Public_Controller
 	{
         $data['hilights'] = new Hilight();
         $data['hilights']->order_by('id','desc')->get();
-		$this->load->view('inc_home',$data);
+		$this->load->view('inc_home_aviaslider',$data);
 	}
 }
 ?>
