@@ -21,13 +21,13 @@
 					<th>อีเมล์  :</th>
 					<td><input type="text" class="input-xlarge" id="inputEmail" name="email" style="width:440px;"></td>
 				</tr>
-				<tr>
+				<!-- <tr>
 					<th>รหัสลับ :</th>
 					<td>
 						<img src="users/captcha" /><Br>
                   		<input type="text" class="input-small" name="captcha" id="inputCaptcha" placeholder="กรอกรหัสลับ" style="width:100px;">
 					</td>
-				</tr>
+				</tr> -->
 				<tr>
 					<th></th>
 					<td><input type="submit" value="ส่งช้อความ"></td>

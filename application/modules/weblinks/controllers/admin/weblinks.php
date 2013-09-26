@@ -10,6 +10,8 @@ class Weblinks extends Admin_Controller
 	function index()
 	{
 		$data['weblinks'] = new Weblink();
+        if(@$_GET['url'])$data['weblinks']->where("url like '%".$_GET['url']."%'");
+        if(@$_GET['category_id'])$data['weblinks']->where('category_id',$_GET['category_id']);
 		$data['weblinks']->order_by('id','desc')->get_page();
 		$this->template->append_metadata(js_lightbox());
 		$this->template->append_metadata(js_checkbox('approve'));

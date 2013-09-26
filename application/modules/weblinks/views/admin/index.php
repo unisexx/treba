@@ -1,4 +1,15 @@
 <h1>ลิ้งค์รูปภาพ</h1>
+<div class="search">
+    <form method="get">
+        <table class="form">
+            <tr>
+                <th>url</th><td><input type="text" name="url" value="<?php echo (isset($_GET['url']))?$_GET['url']:'' ?>" /></td>
+                <th>หมวดหมู่</th><td><?php echo form_dropdown('category_id',$weblinks->category->get_option(),@$_GET['category_id'],'','ทั้งหมด') ?></td>
+                <td><input type="submit" value="ค้นหา" /></td>
+            </tr>
+        </table>
+    </form>
+</div>
 <?php echo $weblinks->pagination()?>
 <table class="list">
 	<tr>

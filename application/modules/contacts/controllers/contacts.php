@@ -13,19 +13,18 @@ class Contacts extends Public_Controller{
     
     function save(){
         if($_POST){
-            $captcha = $this->session->userdata('captcha');
-            if(($_POST['captcha'] == $captcha) && !empty($captcha)){
+            // $captcha = $this->session->userdata('captcha');
+            // if(($_POST['captcha'] == $captcha) && !empty($captcha)){
                 $contact = new Contact();
                 $_POST['ip'] = $_SERVER['REMOTE_ADDR'];
                 $contact->from_array($_POST);
                 $contact->save();
                 set_notify('success', 'ส่งข้อความเรียบร้อยแล้วค่ะ');
-            }else{
-                set_notify('error','กรอกรหัสไม่ถูกต้อง');
-                redirect($_SERVER['HTTP_REFERER']);
-            }
+            // }else{
+                // set_notify('error','กรอกรหัสไม่ถูกต้อง');
+            // }
         }
-        redirect('contacts');
+        redirect($_SERVER['HTTP_REFERER']);
     }
 }
 ?>
