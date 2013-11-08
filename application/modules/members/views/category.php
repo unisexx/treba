@@ -2,6 +2,7 @@
 .tbmember{width:100%;border:1px solid green;border-collapse:collapse;margin-bottom:15px;}
 .tbmember th{background:#78a40f;color:#ffffff;padding: 5px;}
 .tbmember td{border:1px solid green;}
+.tbdetail td{word-break:break-all;}
 </style>
 <div class="breadcrumbs"><span class="text_breadcrumbs"><?php echo lang_decode($category->name);?></span></div>
 <div id="content">
@@ -21,9 +22,11 @@
 				<td style="text-align: center;">
 					<div style="font-weight: bold;"><?php echo lang_decode($row->company)?></div>
 					<?php if($row->image != ""):?>
-                        <?php echo thumb("uploads/member/".$row->image,200,false,1);?>
+                        <?php // echo thumb("uploads/member/".$row->image,200,false,1);?>
+                        <img src="uploads/member/<?php echo $row->image?>" width="200">
                     <?php else:?>
-                        <?php echo thumb("themes/treba/images/company_logo.jpg",200,false,1);?>
+                        <?php // echo thumb("themes/treba/images/company_logo.jpg",200,false,1);?>
+                        <img src="themes/treba/images/company_logo.jpg" width="200">
                     <?php endif;?>
 				</td>
 				<td>
@@ -58,11 +61,11 @@
 						</tr>
 						<tr>
 							<th>ประเภท</th>
-							<td><?php echo lang_decode($row->record)?></td>
+							<td><?php echo lang_decode($row->category->name)?></td>
 						</tr>
 						<tr>
 							<th>ประวัติ</th>
-							<td><?php echo lang_decode($row->company)?></td>
+							<td><?php echo lang_decode($row->record)?></td>
 						</tr>
 					</table>
 				</td>
