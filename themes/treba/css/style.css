@@ -43,6 +43,12 @@ a:hover {color:#0190fe;}
 .topmenu4 a:hover{width:91px; height:25px; display:block;}
 .topmenu5 a{width:109px; height:23px; background:url(../images/topmenu_5.png) no-repeat; display:block; margin-right:40px;}
 
+.topmenu1en a{width:58px; height:23px; background:url(../images/eng_treba/topmenu_1_eng.png) no-repeat; display:block; margin-right:40px;}
+.topmenu2en a{width:110px; height:23px; background:url(../images/eng_treba/topmenu_2_eng.png) no-repeat; display:block; margin-right:40px;}
+.topmenu3en a{width:125px; height:23px; background:url(../images/eng_treba/topmenu_3_eng.png) no-repeat; display:block; margin-right:40px;}
+.topmenu4en a{ width:106px; height:23px; background:url(../images/eng_treba/topmenu_4_eng.png) no-repeat; display:block; margin-right:35px;}
+.topmenu5en a{width:109px; height:23px; background:url(../images/eng_treba/topmenu_5_eng.png) no-repeat; display:block; margin-right:40px;}
+
 	/**** SECOND LEVEL MENU ****/
 #topmenu ul li ul{list-style: none; position:absolute; display:none; /* integer */ z-index:0;}
 #topmenu ul li:hover ul.subtopmenu3,
@@ -96,6 +102,7 @@ a:hover {color:#0190fe;}
 
 /* ### sponsor ### */
 	.title_sponsor{ margin-top:10px; margin-left:30px; width:89px; height:27px;  display:block; background:url(../images/title_support.png) no-repeat;position:absolute;z-index:1;}
+	.title_sponsor_en{ margin-top:10px; margin-left:30px; width:89px; height:27px;  display:block; background:url(../images/eng_treba/title_support_eng.png) no-repeat;position:absolute;z-index:1;}
 	#sponsor{float:left; width:943px; position:relative; top:30px; left:5px;  height:102px; border:1px solid #d5e8b2; background:white;}
 	#sponsor ul{list-style:none; margin-top:20px; margin-left:8px; padding:0;}
 	#sponsor ul li{list-style:none; margin-left:8px; padding:5px; display:inline;}
@@ -133,6 +140,9 @@ a:hover {color:#0190fe;}
 	.line2{margin-top:1px;border-bottom:1px solid #b8e37c;}
 	.btn_readAll{float:right; width:66px; height:17px; background:url(../images/btn_viewAll_reg.png) no-repeat; cursor:pointer;}
 	.btn_readAll:hover{width:66px; height:17px; background:url(../images/btn_viewAll_hot.png) no-repeat;}
+	
+	.btn_readAll_en{float:right; width:66px; height:17px; background:url(../images/eng_treba/btn_viewAll_reg_eng.png) no-repeat; cursor:pointer;}
+    .btn_readAll_en:hover{width:66px; height:17px; background:url(../images/eng_treba/btn_viewAllhot_eng.png) no-repeat;}
 
 	
 	#contentNewsEvent ul{list-style:none; margin:0; padding:0;}
@@ -151,13 +161,16 @@ a:hover {color:#0190fe;}
 
 /* ### weblink ### */
 	.title_weblink{ margin-top:76px; margin-left:30px; width:66px; height:26px;  display:block; background:url(../images/title_weblink.png) no-repeat;position:absolute;z-index:1;}
+	.title_weblink_en{ margin-top:76px; margin-left:30px; width:90px; height:26px;  display:block; background:url(../images/eng_treba/title_weblink_eng.png) no-repeat;position:absolute;z-index:1;}
 	.titlewelink1{ width:132px; height:17px; background:url(../images/title_middleman.png) no-repeat;position:absolute; margin-top:120px;  margin-left:90px; z-index:1;}
+	.titlewelink1_en{ width:175px; height:17px; background:url(../images/eng_treba/title_middleman_eng.png) no-repeat;position:absolute; margin-top:120px;  margin-left:90px; z-index:1;}
 	#weblink{ float:left; margin-top:40px; width:943px; position:relative; top:60px; left:5px;  height:238px;  background:#f0f0f7;}
 	#weblink ul{list-style:none; margin-top:50px; margin-left:40px; padding:0;}
 	#weblink ul li{list-style:none; margin-left:8px; padding:5px; display:inline;}
 	.line4{border-bottom:1px solid white; width:97%; margin-left:15px;}
 
 	.titlewelink2{ width:132px; height:23px; background:url(../images/title_forgeneral.png) no-repeat;position:absolute; margin-top:10px;  margin-left:90px; z-index:1;}
+	.titlewelink2_en{ width:132px; height:23px; background:url(../images/eng_treba/title_forgeneral_eng.png) no-repeat;position:absolute; margin-top:10px;  margin-left:90px; z-index:1;}
 
 /* ### footer ### */
 #footer{position:relative; margin-top:92px; height:94px; background:url(../images/bg_footer.jpg); background-repeat:repeat-x; z-index:1; font-weight:normal; text-align:center; color:#5a5959; padding-top:10px;}

@@ -1,4 +1,4 @@
-<div class="title_sponsor"></div>
+<div class="<?php echo lang('title_sponsor');?>"></div>
 <div id="sponsor">
     <ul class="inc_banner jcarousel-skin-trebabanner">
         <?php foreach($banner_weblinks as $row):?>

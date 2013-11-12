@@ -1,4 +1,4 @@
-<div id="newsevent"><img src="themes/treba/images/title_newsevent.jpg" width="151" height="20" /><a href="bnews"><div class="btn_readAll"></div></a><div class="line2"></div>
+<div id="newsevent"><img src="<?php echo lang('title_newsevent');?>" width="151" height="20" /><a href="bnews"><div class="<?php echo lang('btn_readAll')?>"></div></a><div class="line2"></div>
             
     <div id="contentNewsEvent" style="padding-top:6px;">
           <ul>
