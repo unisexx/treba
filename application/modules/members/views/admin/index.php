@@ -14,7 +14,7 @@
 <?php echo $members->pagination()?>
 <table class="list">
 	<tr>
-		<!-- <th width="70">แสดง</th> -->
+		<th width="70">แสดง</th>
 		<th>รหัส</th>
 		<th>ชื่อบริษัท</th>
 		<th>ชื่อผู้ประกอบการ</th>
@@ -27,7 +27,7 @@
 	</tr>
 	<?php foreach($members as $row): ?>
 	<tr <?php echo cycle()?>>
-		<!-- <td><input type="checkbox" name="status" value="<?php echo $row->id ?>" <?php echo ($row->status=="approve")?'checked="checked"':'' ?> /></td> -->
+		<td><input type="checkbox" name="status" value="<?php echo $row->id ?>" <?php echo ($row->status=="approve")?'checked="checked"':'' ?> /></td>
 		<td><?php echo $row->code?></td>
 		<td><?php echo lang_decode($row->company);?></td>
 		<td><?php echo lang_decode($row->name)?></td>
