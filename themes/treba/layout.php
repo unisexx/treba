@@ -3,6 +3,7 @@
 <head>
 <base href="<?php echo base_url(); ?>" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="<?=base_url()?>/favicon.ico">
 <title><?php echo $template['title']; ?></title>
 <?php include_once('_css.php')?>
 <?php include_once('_script.php')?>
