@@ -46,10 +46,17 @@ $active_record = TRUE;
 // $db['default']['username'] = 'root';
 // $db['default']['password'] = '1234';
 // $db['default']['database'] = 'treba';
+
+// $db['default']['hostname'] = 'localhost';
+// $db['default']['username'] = 'tastydsign_treba';
+// $db['default']['password'] = 'treb@';
+// $db['default']['database'] = 'tastydsign_treba';
+
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'tastydsign_treba';
-$db['default']['password'] = 'treb@';
-$db['default']['database'] = 'tastydsign_treba';
+$db['default']['username'] = 'treba_dear';
+$db['default']['password'] = 'zCvNEg8J';
+$db['default']['database'] = 'treba_dear';
+
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
