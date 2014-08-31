@@ -25,19 +25,13 @@ body div.pagination a,div.pagination span{
 
 body div.pagination span.current,div.pagination a:hover{
     color:#FFFFFF !important;
-    background-color:#5D9ADF;
-    background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.2, rgb(80,146,220)),
-    color-stop(0.8, rgb(107,163,226))
-    );
+    background-color:#78A40F;
+    background: #78A40F;
     background: -moz-linear-gradient(
     center bottom,
     rgb(80,146,220) 20%,
     rgb(107,163,226) 80%
     );
-    border:1px solid #266DBB;
-    text-shadow:-1px -1px 1px #266DBB;
+    border:1px solid #78A40F;
+    text-shadow:-1px -1px 1px #78A40F;
 }

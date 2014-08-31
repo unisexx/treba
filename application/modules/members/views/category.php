@@ -16,7 +16,7 @@
 			<tr>
 				<td>
 				    <div style="text-align: center; font-weight: bold;vertical-align: top;">
-				        <?php echo $key+1?>
+				        <?=($key+1)+$members->paged->current_row?>
 				    </div>
 				</td>
 				<td style="text-align: center;">

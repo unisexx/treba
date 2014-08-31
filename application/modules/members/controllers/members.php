@@ -21,7 +21,7 @@ class Members extends Public_Controller
 	function category($id){
 		$data['category'] = new Category($id);
         $data['members'] = new Member();
-        $data['members']->where('category_id = '.$id)->where('status = "approve"')->order_by('id','desc')->get_page();
+        $data['members']->where('category_id = '.$id)->where('status = "approve"')->order_by('updated','desc')->get_page();
 		$this->template->build('category',$data);
 	}
 }
