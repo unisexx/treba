@@ -28,7 +28,8 @@
 margin-bottom: -30px;
 border: 1px solid #497110;
 padding: 5px;
-font-size: 15px;"><a href="downloads/download/8"> - ดาวน์โหลดเอกสารประกอบการประชุมใหญ่สามัญ ประจำปี 2557</a></div>
+font-size: 15px;"><a href="downloads/download/8"> - ดาวน์โหลดเอกสารประกอบการประชุมใหญ่สามัญ ประจำปี 2558</a>
+</div>
        	   
            <?php echo modules::run('bnews/inc_home'); ?>
            <br clear="all"><br><br>
